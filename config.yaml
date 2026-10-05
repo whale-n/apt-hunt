@@ -23,6 +23,7 @@ scoring:
   good_threshold: 6.0
   maybe_threshold: 4.0
   max_photos: 4
+  max_per_run: 40  # cost guard: listings scored per poll; the rest wait for the next run
   # Plain-language priorities fed to the scorer, most important first.
   priorities:
     - High ceilings (loft, 10ft+, converted warehouse/factory) — the top priority.
