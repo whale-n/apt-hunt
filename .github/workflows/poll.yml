@@ -1,0 +1,42 @@
+name: poll
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: poll
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - run: uv sync --frozen --no-dev
+      - name: Poll sources
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          GMAIL_CLIENT_ID: ${{ secrets.GMAIL_CLIENT_ID }}
+          GMAIL_CLIENT_SECRET: ${{ secrets.GMAIL_CLIENT_SECRET }}
+          GMAIL_REFRESH_TOKEN: ${{ secrets.GMAIL_REFRESH_TOKEN }}
+          NOTIFY_TO: ${{ secrets.NOTIFY_TO }}
+          RENTER_NAME: ${{ secrets.RENTER_NAME }}
+          RENTER_BLURB: ${{ secrets.RENTER_BLURB }}
+          RENTER_PHONE: ${{ secrets.RENTER_PHONE }}
+        run: uv run python -m src.run --once
+      - name: Commit state
+        if: always()
+        run: |
+          git config user.name "apt-hunt-bot"
+          git config user.email "apt-hunt-bot@users.noreply.github.com"
+          git add state/
+          git diff --cached --quiet || (git commit -qm "state: poll $(date -u +%FT%TZ)" && git pull -q --rebase && git push -q)

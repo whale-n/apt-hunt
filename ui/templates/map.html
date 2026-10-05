@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Map · Apt Hunt{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+{% endblock %}
+{% block body %}
+<div class="toolbar">
+  <label><input type="checkbox" id="showL" checked> Listings</label>
+  <label><input type="checkbox" id="showB"> Buildings (off-market)</label>
+  <span class="hint">Shaded area ≈ 10-minute walk to {{ anchor.name }}</span>
+</div>
+<div id="map"></div>
+{% endblock %}
+{% block scripts %}
+<script>
+const map = L.map('map').setView([{{ anchor.lat }}, {{ anchor.lng }}], 16);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+  maxZoom: 19, attribution: '&copy; OpenStreetMap &copy; CARTO'
+}).addTo(map);
+L.polygon({{ circle }}, {color: '#5b6cff', weight: 1, fillOpacity: 0.07}).addTo(map);
+L.circleMarker([{{ anchor.lat }}, {{ anchor.lng }}], {radius: 8, color: '#a7a9ac', fillColor: '#a7a9ac', fillOpacity: 1})
+  .bindTooltip('{{ anchor.name }}', {permanent: true, direction: 'top'}).addTo(map);
+const colors = {Hot: '#e5484d', Good: '#f5a524', Maybe: '#d4b106', Reject: '#999'};
+const lLayer = L.layerGroup().addTo(map), bLayer = L.layerGroup();
+fetch('/api/points').then(r => r.json()).then(d => {
+  d.listings.forEach(p => L.circleMarker([p.lat, p.lng], {radius: 7, weight: 2, color: '#fff',
+      fillColor: colors[p.category] || '#888', fillOpacity: .95})
+    .bindPopup(`<a href="/l/${p.id}"><b>${p.title}</b></a><br>$${(p.price||0).toLocaleString()} · ${p.beds||'?'} · score ${p.score} · ${p.status}`)
+    .addTo(lLayer));
+  d.buildings.forEach(b => L.circleMarker([b.lat, b.lng], {radius: 4, weight: 1, color: '#5b6cff', fillOpacity: .5})
+    .bindPopup(`<a href="/b/${b.id}"><b>${b.title}</b></a><br>${b.units} units · ${b.mgmt||''}<br>${b.status} · priority ${b.priority}`)
+    .addTo(bLayer));
+});
+document.getElementById('showL').onchange = e => e.target.checked ? lLayer.addTo(map) : lLayer.remove();
+document.getElementById('showB').onchange = e => e.target.checked ? bLayer.addTo(map) : bLayer.remove();
+</script>
+{% endblock %}

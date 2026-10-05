@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}{{ l.Title }} · Apt Hunt{% endblock %}
+{% block body %}
+{% set pics = photos(l) %}
+<div class="detail">
+  <div class="gallery">
+    {% for p in pics %}<a href="{{ p }}" target="_blank"><img src="{{ p }}" loading="lazy" alt=""></a>{% else %}<div class="nopic">no photos</div>{% endfor %}
+  </div>
+  <div class="side">
+    <h1>{{ l.Title }}</h1>
+    <div class="facts big">
+      <b>{{ '${:,.0f}'.format(l.Price) if l.Price else '$?' }}</b> · {{ l.Beds or '?' }}
+      {% if l.Sqft %}· {{ l.Sqft|int }} ft²{% endif %}
+      · {{ ('%.0f'|format(l['Walk min'])) ~ ' min walk' if l['Walk min'] is not none else 'walk ?' }}
+    </div>
+    <div class="facts">{{ l.Address }} {{ l.Unit }} · {{ l.Source }} {% if l.Available %}· available {{ l.Available }}{% endif %}</div>
+    <div class="facts">Score <b>{{ l.Score }}</b> ({{ l.Category }}) ·
+      {% if l.URL %}<a href="{{ l.URL }}" target="_blank" rel="noopener">listing</a> · {% endif %}
+      <a href="{{ l.notion_url }}" target="_blank" rel="noopener">Notion</a>
+      {% if l['Gmail draft ID'] %}· <a href="https://mail.google.com/mail/u/0/#drafts" target="_blank" rel="noopener">Gmail drafts</a>{% endif %}
+    </div>
+    <div class="tags">{% for t in l.Tags or [] %}<span class="tag t-{{ t|replace('/','') }}">{{ t }}</span>{% endfor %}</div>
+
+    <label>Status
+      <select name="status" hx-post="/l/{{ key(l.id) }}/status" hx-trigger="change" hx-swap="none">
+        {% for s in statuses %}<option {{ 'selected' if s == l.Status }}>{{ s }}</option>{% endfor %}
+      </select>
+    </label>
+
+    <h3>Why this score</h3>
+    <div class="reasons">{{ (l['Score reasons'] or '')|replace('\n', '<br>')|safe }}</div>
+    {% if l.Contact %}<p class="facts">Contact: {{ l.Contact }}</p>{% endif %}
+
+    {% if saved == '1' %}<p class="flash">Saved to Notion.</p>{% elif saved == 'draft' %}<p class="flash">Gmail draft created. Review and send it from Gmail.</p>{% endif %}
+
+    <form method="post" action="/l/{{ key(l.id) }}/save" id="f">
+      <label>Outreach draft
+        <textarea name="draft" rows="10">{{ l.Draft or '' }}</textarea>
+      </label>
+      <label>Notes <textarea name="notes" rows="3">{{ l.Notes or '' }}</textarea></label>
+      <label>Viewing at <input type="datetime-local" name="viewing_at" value="{{ (l['Viewing at'] or '')[:16] }}"></label>
+      <div class="actions">
+        <button type="submit">Save</button>
+        <input name="to" placeholder="to (optional email)" value="" form="g">
+        <button type="submit" form="g" class="primary">Save to Gmail draft</button>
+      </div>
+    </form>
+    <form method="post" action="/l/{{ key(l.id) }}/gmail-draft" id="g"
+          onsubmit="this.querySelector('[name=draft]').value=document.querySelector('#f [name=draft]').value">
+      <input type="hidden" name="draft">
+    </form>
+
+    <h3>Description</h3>
+    <div class="desc">{{ l.Description or '(none captured)' }}</div>
+  </div>
+</div>
+{% endblock %}

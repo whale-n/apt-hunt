@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Buildings · Apt Hunt{% endblock %}
+{% block body %}
+<div class="toolbar">
+  <a href="/buildings" class="{{ 'on' if not status }}">All</a>
+  {% for s in building_statuses %}<a href="/buildings?status={{ s|urlencode }}" class="{{ 'on' if s == status }}">{{ s }}</a>{% endfor %}
+</div>
+<div class="two">
+  <table class="grid">
+    <thead><tr><th>Pri</th><th>Address</th><th>Units</th><th>Built</th><th>Walk</th><th>Mgmt / owner</th><th>Evidence</th><th>Status</th></tr></thead>
+    <tbody>
+    {% for b in buildings %}
+      <tr>
+        <td>{{ b.Priority }}</td>
+        <td><a href="/b/{{ key(b.id) }}">{{ b.Address }}</a></td>
+        <td>{{ b.Units|int if b.Units }}</td>
+        <td>{{ b['Year built']|int if b['Year built'] }}</td>
+        <td>{{ b['Walk min'] }}</td>
+        <td>{{ b['Mgmt company'] or b.Owner }}</td>
+        <td class="small">{{ b['Past-rental evidence'] or '' }}</td>
+        <td><span class="pill">{{ b['Outreach status'] }}</span></td>
+      </tr>
+    {% else %}
+      <tr><td colspan="8" class="empty">No buildings yet. Run <code>make offmarket</code>.</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% if companies %}
+  <aside class="companies">
+    <h3>Biggest managers in the zone</h3>
+    <ol>{% for c in companies %}<li><b>{{ c.name }}</b><br><span class="small">{{ c.units }} units · {{ c.buildings }} bldgs · {{ c.mgmt_address }}</span></li>{% endfor %}</ol>
+  </aside>
+  {% endif %}
+</div>
+{% endblock %}

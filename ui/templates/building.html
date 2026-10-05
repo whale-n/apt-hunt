@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}{{ b.Address }} · Apt Hunt{% endblock %}
+{% block body %}
+<div class="narrow">
+  <h1>{{ b.Address }}</h1>
+  <div class="facts big">{{ b.Units|int if b.Units }} units · built {{ b['Year built']|int if b['Year built'] }} · class {{ b['Bldg class'] }} · {{ b['Walk min'] }} min walk · priority {{ b.Priority }}</div>
+  <div class="facts">Owner: {{ b.Owner }} · Manager: {{ b['Mgmt company'] or '—' }} · Contact: {{ b['Contact name'] or '—' }} · BBL {{ b.BBL }}
+    · <a href="https://hpdonline.nyc.gov/hpdonline/" target="_blank" rel="noopener">HPD Online</a>
+    · <a href="https://streeteasy.com/search?search={{ b.Address|urlencode }}%20Brooklyn" target="_blank" rel="noopener">StreetEasy</a>
+    · <a href="{{ b.notion_url }}" target="_blank" rel="noopener">Notion</a></div>
+  {% if b['Past-rental evidence'] %}<p class="facts">Seen listings here: {{ b['Past-rental evidence'] }}</p>{% endif %}
+
+  {% if saved == '1' %}<p class="flash">Saved to Notion.</p>{% elif saved == 'draft' %}<p class="flash">Gmail draft created. Review and send it from Gmail.</p>{% endif %}
+
+  <form method="post" action="/b/{{ key(b.id) }}/generate"><button type="submit">✨ Generate outreach draft</button></form>
+
+  <form method="post" action="/b/{{ key(b.id) }}/save" id="f">
+    <div class="three">
+      <label>Email <input name="contact_email" value="{{ b['Contact email'] or '' }}"></label>
+      <label>Phone <input name="contact_phone" value="{{ b['Contact phone'] or '' }}"></label>
+      <label>Website <input name="website" value="{{ b.Website or '' }}"></label>
+    </div>
+    <label>Outreach status
+      <select name="status">{% for s in building_statuses %}<option {{ 'selected' if s == b['Outreach status'] }}>{{ s }}</option>{% endfor %}</select>
+    </label>
+    <label>Draft <textarea name="draft" rows="14">{{ b.Draft or '' }}</textarea></label>
+    <label>Notes <textarea name="notes" rows="3">{{ b.Notes or '' }}</textarea></label>
+    <div class="actions">
+      <button type="submit">Save</button>
+      <button type="submit" form="g" class="primary">Save to Gmail draft</button>
+    </div>
+  </form>
+  <form method="post" action="/b/{{ key(b.id) }}/gmail-draft" id="g"
+        onsubmit="this.draft.value=document.querySelector('#f [name=draft]').value; this.to.value=document.querySelector('#f [name=contact_email]').value">
+    <input type="hidden" name="draft"><input type="hidden" name="to">
+  </form>
+</div>
+{% endblock %}

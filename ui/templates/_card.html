@@ -1,0 +1,30 @@
+{% set pics = photos(l) %}
+<article class="card cat-{{ (l.Category or 'none')|lower }}" id="card-{{ key(l.id) }}" tabindex="-1"
+         data-id="{{ key(l.id) }}" data-url="{{ l.URL or '' }}">
+  <div class="pics">
+    {% for p in pics[:6] %}<img src="{{ p }}" loading="lazy" alt="">{% else %}<div class="nopic">no photos</div>{% endfor %}
+  </div>
+  <div class="info">
+    <div class="row1">
+      <span class="score">{{ '%.1f'|format(l.Score) if l.Score is not none else '–' }}</span>
+      <a class="title" href="/l/{{ key(l.id) }}">{{ l.Title }}</a>
+    </div>
+    <div class="facts">
+      <b>{{ '${:,.0f}'.format(l.Price) if l.Price else '$?' }}</b>
+      · {{ l.Beds or '?' }}
+      {% if l.Sqft %}· {{ l.Sqft|int }} ft²{% endif %}
+      · {{ ('%.0f'|format(l['Walk min'])) ~ ' min walk' if l['Walk min'] is not none else 'walk ?' }}
+      · <span class="src">{{ l.Source }}</span>
+      {% if l.Available %}· avail {{ l.Available }}{% endif %}
+    </div>
+    <div class="tags">{% for t in l.Tags or [] %}<span class="tag t-{{ t|replace('/','') }}">{{ t }}</span>{% endfor %}</div>
+    <div class="reasons">{{ (l['Score reasons'] or '')|replace('\n', '<br>')|safe }}</div>
+    <div class="actions">
+      <button class="up" hx-post="/l/{{ key(l.id) }}/vote/up" hx-target="#card-{{ key(l.id) }}" hx-swap="outerHTML">👍 Shortlist <kbd>y</kbd></button>
+      <button class="down" hx-post="/l/{{ key(l.id) }}/vote/down" hx-target="#card-{{ key(l.id) }}" hx-swap="outerHTML">👎 Pass <kbd>n</kbd></button>
+      {% if l.URL %}<a href="{{ l.URL }}" target="_blank" rel="noopener">Open <kbd>o</kbd></a>{% endif %}
+      <a href="/l/{{ key(l.id) }}">Draft <kbd>d</kbd></a>
+      <span class="status">{{ l.Status }}</span>
+    </div>
+  </div>
+</article>

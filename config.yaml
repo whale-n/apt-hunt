@@ -1,0 +1,70 @@
+# Search criteria, scoring and integration settings for apt-hunt.
+# Secrets (API keys, tokens) live in .env locally and in GitHub Actions secrets — never here.
+
+search:
+  max_price: 5000
+  beds: [studio, 1br, 2br]
+  max_walk_min: 10
+  anchor:
+    name: Bedford Av (L)
+    lat: 40.717304
+    lng: -73.956872
+  move_in:
+    earliest: 2026-10-25
+    latest: 2026-12-05
+  craigslist:
+    postal: "11211"
+    radius_mi: 1
+
+scoring:
+  model: claude-haiku-4-5
+  hot_threshold: 8.0
+  good_threshold: 6.0
+  maybe_threshold: 4.0
+  max_photos: 4
+  # Plain-language priorities fed to the scorer, most important first.
+  priorities:
+    - High ceilings (loft, 10ft+, converted warehouse/factory) — the top priority.
+    - Not cramped — generous layout and real square footage; a "large studio" needs evidence.
+    - Natural light — big/many windows, good exposure, high floor, unobstructed views.
+    - In-unit washer/dryer (strongly preferred) and dishwasher.
+    - Private outdoor space (balcony, terrace, yard) or roof access.
+    - No broker fee charged to the tenant.
+
+notify:
+  # Gmail notifications go only to this address (enforced in code). Set via NOTIFY_TO env/secret.
+  to: ""
+  tracker_base_url: http://localhost:8765
+
+# Renter profile used in outreach drafts. Set via RENTER_NAME / RENTER_BLURB / RENTER_PHONE env/secrets
+# so personal details stay out of the (public) repo.
+profile:
+  name: ""
+  move_in_window: Nov 1–30, 2026
+  blurb: ""
+  phone: ""
+
+notion:
+  listings_db: fdd11cc369324f8fab94a6fcb1d8793b
+  buildings_db: 280e3f87a94f4e1ca5d5f8d7621764b5
+
+gmail:
+  feed_label: apt-feed
+  processed_label: apt-processed
+  hot_label: apt-hot
+  # Sender substrings routed into the feed label (used by scripts/setup_gmail.py).
+  feed_senders:
+    streeteasy: [streeteasy.com]
+    zillow: [zillow.com]
+    renthop: [renthop.com]
+    apartments: [apartments.com]
+    leasebreak: [leasebreak.com]
+    listingsproject: [listingsproject.com]
+    facebook: [facebookmail.com]
+
+# Management-company / broker listing pages polled for new units.
+# Populated from the off-market map; add {name, url} entries.
+mgmt_sites: []
+
+github:
+  repo: whale-n/apt-hunt

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Board · Apt Hunt{% endblock %}
+{% block head %}<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.2/Sortable.min.js"></script>{% endblock %}
+{% block body %}
+<div class="board">
+  {% for status, items in columns.items() %}
+  <div class="col">
+    <h3>{{ status }} <span>{{ items|length }}</span></h3>
+    <div class="lane" data-status="{{ status }}">
+      {% for l in items %}
+      <div class="mini cat-{{ (l.Category or 'none')|lower }}" data-id="{{ key(l.id) }}">
+        {% set pics = photos(l) %}{% if pics %}<img src="{{ pics[0] }}" loading="lazy" alt="">{% endif %}
+        <a href="/l/{{ key(l.id) }}">{{ l.Title }}</a>
+        <div class="facts">{{ '${:,.0f}'.format(l.Price) if l.Price else '$?' }} · {{ l.Beds or '?' }} · {{ l.Score }}
+          {% if l['Viewing at'] %}<br>👀 {{ l['Viewing at'][:16]|replace('T',' ') }}{% endif %}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<p class="hint">New column shows Hot/Good only. Drag cards between columns to update Notion.</p>
+{% endblock %}
+{% block scripts %}
+<script>
+document.querySelectorAll('.lane').forEach(lane => new Sortable(lane, {
+  group: 'board', animation: 120,
+  onAdd: e => {
+    const body = new URLSearchParams({status: e.to.dataset.status});
+    fetch(`/l/${e.item.dataset.id}/status`, {method: 'POST', body});
+  }
+}));
+</script>
+{% endblock %}

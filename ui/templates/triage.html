@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Inbox · Apt Hunt{% endblock %}
+{% block body %}
+<div class="toolbar">
+  <a href="/?show=new" class="{{ 'on' if show == 'new' }}">New</a>
+  <a href="/?show=all" class="{{ 'on' if show == 'all' }}">All active</a>
+  <a href="/?show=rejects" class="{{ 'on' if show == 'rejects' }}">Low scores</a>
+  <span class="hint"><kbd>j</kbd>/<kbd>k</kbd> move · <kbd>y</kbd> shortlist · <kbd>n</kbd> pass · <kbd>o</kbd> open · <kbd>d</kbd> draft</span>
+</div>
+<section id="cards">
+  {% for l in items %}{% include "_card.html" %}{% else %}
+  <p class="empty">Nothing to triage. New listings arrive every ~10 minutes.</p>
+  {% endfor %}
+</section>
+{% endblock %}

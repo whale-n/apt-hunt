@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Activity · Apt Hunt{% endblock %}
+{% block body %}
+<div class="two">
+  <section>
+    <h3>Last poll</h3>
+    {% if last.error %}<p class="small">Unavailable: {{ last.error }}</p>{% else %}
+    <table class="grid">
+      <tr><th>Finished</th><td>{{ last.finished_at }} ({{ last.seconds }}s)</td></tr>
+      <tr><th>Sources</th><td>{% for k, v in (last.sources or {}).items() %}{{ k }}: {{ v }}<br>{% endfor %}</td></tr>
+      <tr><th>Candidates</th><td>{{ last.candidates }} · {{ last.duplicates }} dupes · {{ last.rejected }} filtered</td></tr>
+      <tr><th>Created</th><td>{{ last.created }} ({{ last.hot }} hot)</td></tr>
+      <tr><th>Errors</th><td class="small">{% for e in last.errors or [] %}{{ e }}<br>{% else %}none{% endfor %}</td></tr>
+    </table>
+    {% endif %}
+
+    <h3>Workflow runs <a class="small" href="https://github.com/{{ repo }}/actions" target="_blank" rel="noopener">GitHub</a></h3>
+    {% if runs.error %}<p class="small">Unavailable: {{ runs.error }}</p>{% else %}
+    <table class="grid">
+      {% for r in runs %}
+      <tr><td>{{ r.createdAt[:16]|replace('T',' ') }}</td><td>{{ r.workflowName }}</td><td>{{ r.event }}</td>
+        <td><a href="{{ r.url }}" target="_blank" rel="noopener" class="pill {{ r.conclusion or r.status }}">{{ r.conclusion or r.status }}</a></td></tr>
+      {% endfor %}
+    </table>
+    {% endif %}
+  </section>
+  <section>
+    <h3>Notifications sent</h3>
+    <table class="grid">
+      {% for l in notified %}<tr><td>{{ l['Notified at'][:16]|replace('T',' ') }}</td><td><a href="/l/{{ key(l.id) }}">{{ l.Title }}</a></td><td>{{ l.Category }}</td></tr>
+      {% else %}<tr><td class="empty">None yet</td></tr>{% endfor %}
+    </table>
+    <h3>Gmail drafts created</h3>
+    <table class="grid">
+      {% for l in drafted %}<tr><td><a href="/l/{{ key(l.id) }}">{{ l.Title }}</a></td><td>{{ l.Status }}</td></tr>
+      {% else %}<tr><td class="empty">None yet</td></tr>{% endfor %}
+    </table>
+  </section>
+</div>
+{% endblock %}

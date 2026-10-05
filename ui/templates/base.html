@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Apt Hunt{% endblock %}</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://unpkg.com/htmx.org@2.0.3"></script>
+  {% block head %}{% endblock %}
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/">Apt Hunt</a>
+  <nav>
+    <a href="/" class="{{ 'on' if request.url.path == '/' }}">Inbox <b>{{ counts.inbox }}</b></a>
+    <a href="/board" class="{{ 'on' if request.url.path == '/board' }}">Board</a>
+    <a href="/map" class="{{ 'on' if request.url.path == '/map' }}">Map</a>
+    <a href="/buildings" class="{{ 'on' if request.url.path.startswith('/b') }}">Buildings</a>
+    <a href="/activity" class="{{ 'on' if request.url.path == '/activity' }}">Activity</a>
+  </nav>
+  <div class="stats">
+    <span title="Listings created today">New today <b>{{ counts.new_today }}</b></span>
+    <span title="Hot, not dead">Hot <b class="hot">{{ counts.hot }}</b></span>
+    <span title="Status = Contacted">Awaiting reply <b>{{ counts.awaiting }}</b></span>
+    <span title="Viewings in the next 7 days">Viewings <b>{{ counts.viewings }}</b></span>
+    <button hx-post="/sync-now" hx-target="#flash">Sync</button>
+    <button hx-post="/poll-now" hx-target="#flash">Run poll now</button>
+    <span id="flash"></span>
+  </div>
+</header>
+{% if sync_error %}<div class="banner">Notion sync problem: {{ sync_error[:200] }} (showing cached data)</div>{% endif %}
+<main>{% block body %}{% endblock %}</main>
+<script src="/static/app.js"></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

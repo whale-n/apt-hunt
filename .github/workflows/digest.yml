@@ -1,0 +1,26 @@
+name: digest
+on:
+  schedule:
+    - cron: "0 12,22 * * *"   # ~8am / 6pm New York (EDT); shifts an hour after DST ends
+  workflow_dispatch:
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - run: uv sync --frozen --no-dev
+      - env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          GMAIL_CLIENT_ID: ${{ secrets.GMAIL_CLIENT_ID }}
+          GMAIL_CLIENT_SECRET: ${{ secrets.GMAIL_CLIENT_SECRET }}
+          GMAIL_REFRESH_TOKEN: ${{ secrets.GMAIL_REFRESH_TOKEN }}
+          NOTIFY_TO: ${{ secrets.NOTIFY_TO }}
+          RENTER_NAME: ${{ secrets.RENTER_NAME }}
+          RENTER_BLURB: ${{ secrets.RENTER_BLURB }}
+          RENTER_PHONE: ${{ secrets.RENTER_PHONE }}
+        run: uv run python -m src.digest

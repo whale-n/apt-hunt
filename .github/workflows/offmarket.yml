@@ -1,0 +1,27 @@
+name: offmarket
+on:
+  schedule:
+    - cron: "0 14 * * 1"   # Mondays
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-map:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - run: uv sync --frozen --no-dev
+      - env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: uv run python -m src.offmarket.build_map --top 150
+      - run: |
+          git config user.name "apt-hunt-bot"
+          git config user.email "apt-hunt-bot@users.noreply.github.com"
+          git add state/
+          git diff --cached --quiet || (git commit -qm "state: offmarket map" && git pull -q --rebase && git push -q)
