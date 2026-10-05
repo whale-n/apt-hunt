@@ -11,7 +11,8 @@ class Listing:
     title: str = ""
     address: str = ""
     unit: str = ""
-    price: int | None = None
+    price: int | None = None  # gross / asking rent
+    net_effective: int | None = None
     beds: str | None = None  # studio | 1br | 2br | 3br+
     baths: float | None = None
     sqft: int | None = None

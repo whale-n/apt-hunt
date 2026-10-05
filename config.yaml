@@ -2,7 +2,8 @@
 # Secrets (API keys, tokens) live in .env locally and in GitHub Actions secrets — never here.
 
 search:
-  max_price: 5000
+  max_price: 5000        # net effective (after concessions) must be at or below this
+  max_gross_price: 5500  # asking rent ceiling; $5k-5.5k listings pass only with a concession
   beds: [studio, 1br, 2br]
   max_walk_min: 10
   anchor:

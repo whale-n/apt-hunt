@@ -139,6 +139,8 @@ class NotionStore:
             "Address": _rich(listing.address),
             "Unit": _rich(listing.unit),
             "Price": _number(listing.price),
+            "Net effective": _number(score.get("net_effective")),
+            "Concession": _rich(score.get("concession")),
             "Beds": _select(listing.beds if listing.beds in ("studio", "1br", "2br") else None),
             "Sqft": _number(listing.sqft or score.get("est_sqft")),
             "Walk min": _number(listing.walk_min),

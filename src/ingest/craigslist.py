@@ -68,7 +68,7 @@ def search() -> list[Listing]:
         "cc": "US",
         "lang": "en",
         "searchPath": "apa",
-        "max_price": s["max_price"],
+        "max_price": s["max_gross_price"],
         "postal": s["craigslist"]["postal"],
         "search_distance": s["craigslist"]["radius_mi"],
         "sort": "date",

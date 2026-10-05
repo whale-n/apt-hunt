@@ -37,8 +37,10 @@ def save_seen(seen: dict) -> None:
 def prefilter(l: Listing) -> str | None:
     """Return a rejection reason when known data already violates a hard requirement."""
     s = cfg()["search"]
-    if l.price and l.price > s["max_price"]:
+    if l.price and l.price > s["max_gross_price"]:
         return f"price ${l.price}"
+    if l.net_effective and l.net_effective > s["max_price"]:
+        return f"net effective ${l.net_effective}"
     if l.price and l.price < 1200:
         return f"price ${l.price} (likely room share/scam)"
     if l.beds and l.beds not in s["beds"]:

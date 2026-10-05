@@ -34,7 +34,8 @@ class ExtractedListing(BaseModel):
     address: str = Field("", description="Street address if given, e.g. '150 N 7th St'")
     unit: str = ""
     neighborhood: str = ""
-    price: int | None = Field(None, description="Monthly rent in USD")
+    price: int | None = Field(None, description="Gross / asking monthly rent in USD")
+    net_effective: int | None = Field(None, description="Net effective monthly rent if stated (after free months)")
     beds: str | None = Field(None, description="'studio', '1', '2', '3' ...")
     baths: float | None = None
     sqft: int | None = None
@@ -100,6 +101,7 @@ def extract_listings(source: str, subject: str, content_html: str = "", content_
                 address=address,
                 unit=e.unit,
                 price=e.price,
+                net_effective=e.net_effective,
                 beds=normalize_beds(e.beds),
                 baths=e.baths,
                 sqft=e.sqft,
@@ -126,6 +128,12 @@ class ScoreResult(BaseModel):
     tags: list[str] = Field(description=f"Subset of: {', '.join(TAGS)}")
     reasons: str = Field(description="2-4 short bullet points (start each with '- ') explaining the score")
     est_sqft: int | None = Field(None, description="Square footage if stated or reasonably inferable, else null")
+    net_effective: int | None = Field(
+        None,
+        description="Net effective monthly rent: stated value, or computed from concessions as "
+        "gross * (lease months - free months) / lease months. Null if no concession is mentioned.",
+    )
+    concession: str = Field("", description="Short description of any concession, e.g. '1 month free on 13-mo lease'")
     draft_subject: str = Field(description="Subject line for an inquiry email about this listing")
     draft_body: str = Field(description="Short, warm inquiry email body (under 120 words), signed with the renter's name")
 
@@ -138,7 +146,8 @@ def score_system() -> str:
     return f"""You evaluate NYC rental listings for one renter and draft an inquiry email for each.
 
 Hard requirements (already pre-filtered where data allowed; flag anything that slipped through):
-- Rent at most ${s['max_price']:,}/month
+- Net effective rent at most ${s['max_price']:,}/month. Asking rents up to ${s['max_gross_price']:,} qualify only
+  when a concession (free months, owner-paid fee credit) brings the net effective to ${s['max_price']:,} or less.
 - Studio (large), 1BR or 2BR
 - Within a {s['max_walk_min']}-minute walk of the {s['anchor']['name']} station in north Williamsburg, Brooklyn
 - Move-in between {s['move_in']['earliest']} and {s['move_in']['latest']} (target {p['move_in_window']})
@@ -182,6 +191,7 @@ def _listing_text(l: Listing) -> str:
         "Address": l.address,
         "Unit": l.unit,
         "Rent": f"${l.price:,}" if l.price else "unknown",
+        "Net effective (stated)": f"${l.net_effective:,}" if l.net_effective else None,
         "Beds": l.beds or "unknown",
         "Baths": l.baths,
         "Sqft": l.sqft or "not stated",
@@ -225,13 +235,24 @@ def score_listing(listing: Listing, examples: list[dict] | None = None) -> dict:
     if r is None:
         return {"score": 0, "category": "Maybe", "tags": [], "reasons": f"Scoring unavailable ({resp.stop_reason})"}
     score = max(0.0, min(10.0, r.score))
+    reasons = r.reasons
     if not r.move_in_ok:
         score = min(score, 3.0)
+    s = cfg()["search"]
+    net = listing.net_effective or r.net_effective
+    if listing.price and listing.price > s["max_price"] and not (net and net <= s["max_price"]):
+        score = min(score, 3.0)
+        reasons = f"- Over ${s['max_price']:,} with no concession bringing net effective under budget\n" + reasons
+    tags = [t for t in r.tags if t in TAGS]
+    if r.concession and "concession" not in tags:
+        tags.append("concession")
     return {
         "score": round(score, 1),
         "category": categorize(score),
-        "tags": [t for t in r.tags if t in TAGS],
-        "reasons": r.reasons,
+        "tags": tags,
+        "reasons": reasons,
+        "net_effective": net,
+        "concession": r.concession,
         "est_sqft": r.est_sqft,
         "draft_subject": r.draft_subject,
         "draft": r.draft_body,

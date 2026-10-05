@@ -45,7 +45,10 @@ def test_dedupe_keys():
 
 
 def test_prefilter():
-    assert prefilter(Listing(source="x", price=5200))
+    assert prefilter(Listing(source="x", price=5600))  # over gross ceiling
+    assert prefilter(Listing(source="x", price=5400, net_effective=5100))  # concession not enough
+    assert prefilter(Listing(source="x", price=5400)) is None  # may have a concession; scorer decides
+    assert prefilter(Listing(source="x", price=5400, net_effective=4985)) is None
     assert prefilter(Listing(source="x", price=4000, beds="3br+"))
     assert prefilter(Listing(source="x", price=4800, beds="1br")) is None
 
