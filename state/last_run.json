@@ -1,17 +1,20 @@
 {
- "finished_at": "2026-10-05T11:50:05+00:00",
- "seconds": 3.2,
+ "finished_at": "2026-10-05T13:23:57+00:00",
+ "seconds": 144.2,
  "sources": {
-  "craigslist": 150
+  "craigslist": 152
  },
- "candidates": 150,
- "duplicates": 137,
- "rejected": 13,
+ "candidates": 152,
+ "duplicates": 151,
+ "rejected": 1,
  "created": 0,
  "hot": 0,
  "scored": 0,
  "deferred": 0,
  "fatal": [],
- "errors": [],
+ "errors": [
+  "extract 10 Results for Manhattan - 10/5/26: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Schema is too complex.'}, 'request_id': 'req_011CfjAF3PbUt7jzDctaHw1V'}",
+  "extract Updates to 133 North 4th Street #2: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Schema is too complex.'}, 'request_id': 'req_011CfjAKVDDgA2Et1uwu7UFz'}"
+ ],
  "dry_run": false
 }
