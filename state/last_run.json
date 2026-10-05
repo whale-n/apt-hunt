@@ -1,17 +1,17 @@
 {
- "finished_at": "2026-10-05T04:47:57+00:00",
- "seconds": 100.3,
+ "finished_at": "2026-10-05T11:50:05+00:00",
+ "seconds": 3.2,
  "sources": {
-  "email:listingsproject": 0,
-  "email:renthop": 0,
-  "email:zillow": 0,
-  "craigslist": 148
+  "craigslist": 150
  },
- "candidates": 148,
- "duplicates": 143,
- "rejected": 0,
- "created": 5,
- "hot": 3,
+ "candidates": 150,
+ "duplicates": 137,
+ "rejected": 13,
+ "created": 0,
+ "hot": 0,
+ "scored": 0,
+ "deferred": 0,
+ "fatal": [],
  "errors": [],
  "dry_run": false
 }
