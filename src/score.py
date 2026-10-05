@@ -118,7 +118,10 @@ TAGS = ["loft", "high-ceilings", "light", "w/d", "dishwasher", "outdoor", "no-fe
 
 
 class ScoreResult(BaseModel):
-    move_in_ok: bool = Field(description="False only if the listing clearly cannot start within the move-in window")
+    move_in_ok: bool = Field(
+        description="True unless the listing explicitly states an availability date outside the move-in window. "
+        "Missing or vague availability counts as True."
+    )
     score: float = Field(description="0-10 fit score")
     tags: list[str] = Field(description=f"Subset of: {', '.join(TAGS)}")
     reasons: str = Field(description="2-4 short bullet points (start each with '- ') explaining the score")
@@ -148,6 +151,8 @@ Scoring guidance (0-10):
 - 7-8: strong on most priorities with no major red flags.
 - 5-6: acceptable but missing several priorities, or too little information to judge.
 - 0-4: cramped, dark, basement/garden-level with poor light, or violates a requirement.
+Missing information (move-in date, sqft, amenities) is not a reason to reject: score what is known and note
+what to ask. Shared roof decks count as outdoor access but less than private outdoor space.
 Judge ceilings, light and spaciousness from photos when provided; say when evidence is missing rather than assuming.
 Studios need concrete evidence of size (sqft >= ~500, separate sleeping area, or photos) to score above 6.
 Under NYC's FARE Act (2025), a tenant generally cannot be charged a broker fee when the broker works for the landlord.

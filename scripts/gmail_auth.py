@@ -29,10 +29,21 @@ def set_env(values: dict) -> None:
 
 
 def main() -> None:
-    secret_path = Path(sys.argv[1] if len(sys.argv) > 1 else "client_secret.json")
-    info = json.loads(secret_path.read_text())
-    client = info.get("installed") or info.get("web")
-    flow = InstalledAppFlow.from_client_secrets_file(str(secret_path), SCOPES)
+    import os
+
+    from dotenv import load_dotenv
+
+    load_dotenv(ENV)
+    if len(sys.argv) > 1:
+        info = json.loads(Path(sys.argv[1]).read_text())
+        client = info.get("installed") or info.get("web")
+    else:  # client id/secret already stored in .env
+        client = {"client_id": os.environ["GMAIL_CLIENT_ID"], "client_secret": os.environ["GMAIL_CLIENT_SECRET"]}
+    flow = InstalledAppFlow.from_client_config(
+        {"installed": {**client, "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+                       "token_uri": "https://oauth2.googleapis.com/token", "redirect_uris": ["http://localhost"]}},
+        SCOPES,
+    )
     creds = flow.run_local_server(port=0, access_type="offline", prompt="consent")
     set_env({
         "GMAIL_CLIENT_ID": client["client_id"],
