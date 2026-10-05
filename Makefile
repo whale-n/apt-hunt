@@ -31,10 +31,14 @@ secrets:
 	bash scripts/push_secrets.sh
 
 install-tracker:
-	cp scripts/com.apt-hunt.tracker.plist ~/Library/LaunchAgents/
-	launchctl unload ~/Library/LaunchAgents/com.apt-hunt.tracker.plist 2>/dev/null || true
-	launchctl load ~/Library/LaunchAgents/com.apt-hunt.tracker.plist
+	for a in tracker kick; do \
+	  cp scripts/com.apt-hunt.$$a.plist ~/Library/LaunchAgents/; \
+	  launchctl unload ~/Library/LaunchAgents/com.apt-hunt.$$a.plist 2>/dev/null || true; \
+	  launchctl load ~/Library/LaunchAgents/com.apt-hunt.$$a.plist; \
+	done
 
 uninstall-tracker:
-	launchctl unload ~/Library/LaunchAgents/com.apt-hunt.tracker.plist 2>/dev/null || true
-	rm -f ~/Library/LaunchAgents/com.apt-hunt.tracker.plist
+	for a in tracker kick; do \
+	  launchctl unload ~/Library/LaunchAgents/com.apt-hunt.$$a.plist 2>/dev/null || true; \
+	  rm -f ~/Library/LaunchAgents/com.apt-hunt.$$a.plist; \
+	done

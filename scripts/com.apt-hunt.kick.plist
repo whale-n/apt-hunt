@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Backup trigger: asks GitHub Actions to run the poller every 10 min while this Mac is awake,
+     because GitHub's own cron frequently skips runs. The workflow's concurrency group prevents overlap.
+     Install: make install-tracker -->
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.apt-hunt.kick</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/opt/homebrew/bin/gh</string>
+    <string>workflow</string><string>run</string><string>poll.yml</string>
+    <string>-R</string><string>whale-n/apt-hunt</string>
+  </array>
+  <key>StartInterval</key><integer>600</integer>
+  <key>RunAtLoad</key><true/>
+  <key>StandardOutPath</key><string>/tmp/apt-hunt-kick.log</string>
+  <key>StandardErrorPath</key><string>/tmp/apt-hunt-kick.log</string>
+</dict>
+</plist>

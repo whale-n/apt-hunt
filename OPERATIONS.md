@@ -3,7 +3,8 @@
 ## What runs where
 | Piece | Where | Schedule |
 |---|---|---|
-| Poller (`src/run.py`) | GitHub Actions `poll.yml` | every 10 min (GitHub may delay a few minutes) |
+| Poller (`src/run.py`) | GitHub Actions `poll.yml` | cron at :03/:13/…/:53 (best-effort; GitHub skips many runs) |
+| Backup trigger | this Mac, launchd `com.apt-hunt.kick` | dispatches `poll.yml` every 10 min while the Mac is awake |
 | Digest (`src/digest.py`) | GitHub Actions `digest.yml` | ~8am / 6pm New York |
 | Off-market map (`src/offmarket/build_map.py`) | GitHub Actions `offmarket.yml` | Mondays |
 | Tracker UI | this Mac, launchd `com.apt-hunt.tracker` | always on → http://localhost:8765 |
