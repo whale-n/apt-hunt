@@ -1,20 +1,20 @@
 {
- "finished_at": "2026-10-05T16:48:07+00:00",
- "seconds": 138.3,
+ "finished_at": "2026-10-05T18:34:05+00:00",
+ "seconds": 127.0,
  "sources": {
-  "craigslist": 151
+  "craigslist": 152
  },
- "candidates": 151,
- "duplicates": 151,
- "rejected": 0,
+ "candidates": 152,
+ "duplicates": 150,
+ "rejected": 2,
  "created": 0,
  "hot": 0,
  "scored": 0,
  "deferred": 0,
  "fatal": [],
  "errors": [
-  "extract 10 Results for Manhattan - 10/5/26: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Schema is too complex.'}, 'request_id': 'req_011CfjRpXGJoLmXtovUtpCki'}",
-  "extract Updates to 133 North 4th Street #2: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Schema is too complex.'}, 'request_id': 'req_011CfjRuui4ZyBeoWQnhv35h'}"
+  "extract 10 Results for Manhattan - 10/5/26: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Schema is too complex.'}, 'request_id': 'req_011CfjZuzZSh1mihqcygkzzv'}",
+  "extract Updates to 133 North 4th Street #2: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Schema is too complex.'}, 'request_id': 'req_011CfjZzbcwx6ag6bCs6d4M5'}"
  ],
  "dry_run": false
 }
