@@ -1,0 +1,20 @@
+{
+ "finished_at": "2026-10-05T04:39:20+00:00",
+ "seconds": 35.2,
+ "sources": {
+  "craigslist": 148
+ },
+ "candidates": 148,
+ "duplicates": 40,
+ "rejected": 103,
+ "created": 0,
+ "hot": 0,
+ "errors": [
+  "score Williamsburg / Greenpoint -Luxury 1 Bedroom - Elev: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfiUPR7rk9LBixgFWtsy5'}",
+  "score Modern 2BR/3BR at 280 Meeker with Private Terrace : Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfiUPXgWcnwjjPjnmEpbj'}",
+  "score 1 Bedroom in Elevator Building: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfiUPvpnwtNuqLyf8VJEQ'}",
+  "score \ud83c\udfe0 1 Bed / 1 Bath \u2014 Prime Williamsburg | $4,500/mo : Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfiUQ7bBpFFK1x3Jg3mEx'}",
+  "score Over Sunny Studio in HEART of Williamsburg w/ Elev: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfiURBX7p8XFJKauHBfe1'}"
+ ],
+ "dry_run": false
+}
