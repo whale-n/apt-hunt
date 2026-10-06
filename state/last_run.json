@@ -1,6 +1,6 @@
 {
- "finished_at": "2026-10-05T21:22:09+00:00",
- "seconds": 309.8,
+ "finished_at": "2026-10-06T00:58:25+00:00",
+ "seconds": 272.3,
  "sources": {
   "craigslist": 153
  },
@@ -13,10 +13,10 @@
  "deferred": 0,
  "fatal": [],
  "errors": [
-  "extract 9 Results for Brooklyn - 10/5/26: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Schema is too complex.'}, 'request_id': 'req_011CfjnVxewMdLYTkvaWjHwL'}",
-  "extract 9 Results for Brooklyn - 10/5/26: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Schema is too complex.'}, 'request_id': 'req_011CfjnbZ3HgNaq5PhucXeB7'}",
-  "extract 10 Results for Manhattan - 10/5/26: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Schema is too complex.'}, 'request_id': 'req_011CfjngxQsRvVfS916NBHxh'}",
-  "extract Updates to 133 North 4th Street #2: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Schema is too complex.'}, 'request_id': 'req_011CfjnnhU7CMRCs2Tp4Co9K'}"
+  "extract 9 Results for Brooklyn - 10/5/26: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Schema is too complex.'}, 'request_id': 'req_011Cfk53BvP3RGVsXWcaksXK'}",
+  "extract 9 Results for Brooklyn - 10/5/26: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Schema is too complex.'}, 'request_id': 'req_011Cfk57nweqE1W9sphPHNsk'}",
+  "extract 10 Results for Manhattan - 10/5/26: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Schema is too complex.'}, 'request_id': 'req_011Cfk5DYg68B41b9k9aw9JS'}",
+  "extract Updates to 133 North 4th Street #2: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Schema is too complex.'}, 'request_id': 'req_011Cfk5JRh3DQHbLDJv5zS1i'}"
  ],
  "dry_run": false
 }
