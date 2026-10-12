@@ -1,20 +1,21 @@
 {
- "finished_at": "2026-10-12T03:37:10+00:00",
- "seconds": 229.3,
+ "finished_at": "2026-10-12T06:36:23+00:00",
+ "seconds": 1.5,
  "sources": {
-  "email:streeteasy": 15,
-  "email:renthop": 8,
-  "email:deferred": 7,
   "craigslist": 156
  },
- "candidates": 179,
- "duplicates": 160,
- "rejected": 16,
- "created": 3,
+ "candidates": 156,
+ "duplicates": 156,
+ "rejected": 0,
+ "created": 0,
  "hot": 0,
- "scored": 3,
+ "scored": 0,
  "deferred": 0,
- "fatal": [],
- "errors": [],
+ "fatal": [
+  "Gmail login expired: run `uv run python scripts/gmail_auth.py` then `make secrets`"
+ ],
+ "errors": [
+  "gmail ingest: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})"
+ ],
  "dry_run": false
 }
