@@ -1,12 +1,12 @@
 {
- "finished_at": "2026-10-12T21:34:05+00:00",
- "seconds": 1.4,
+ "finished_at": "2026-10-12T22:51:30+00:00",
+ "seconds": 2.3,
  "sources": {
-  "craigslist": 155
+  "craigslist": 157
  },
- "candidates": 155,
+ "candidates": 157,
  "duplicates": 155,
- "rejected": 0,
+ "rejected": 2,
  "created": 0,
  "hot": 0,
  "scored": 0,
