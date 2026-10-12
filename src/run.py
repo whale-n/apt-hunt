@@ -19,6 +19,7 @@ from src.models import Listing
 
 log = logging.getLogger("apt-hunt")
 
+RUN_BUDGET_S = 330  # stop starting new work after this; the workflow hard-stops at 12 min
 SEEN = STATE_DIR / "seen.json"
 LAST_RUN = STATE_DIR / "last_run.json"
 EMAIL_RE = re.compile(r"[\w.+-]+@[\w-]+\.[\w.-]+")
@@ -33,6 +34,8 @@ def auth_problem(e: Exception) -> str | None:
         return f"Anthropic API key rejected ({type(e).__name__})"
     if "credit balance is too low" in text:
         return "Anthropic credit balance is too low: add credits at platform.claude.com/settings/billing"
+    if "Schema is too complex" in text or "invalid_request_error" in text:
+        return f"Claude API rejected the request (code change needed): {text[:160]}"
     if "Notion" in text and (" 401" in text or "unauthorized" in text.lower()):
         return "Notion token rejected or page no longer shared with the apt-hunt integration"
     return None
@@ -78,14 +81,24 @@ def locate(l: Listing) -> None:
         l.walk_min = geo.walk_minutes(l.lat, l.lng)
 
 
-def collect(backfill_days: int, stats: dict, errors: list, fatal: list) -> tuple[list[Listing], list[str]]:
+def collect(backfill_days: int, stats: dict, errors: list, fatal: list, started: float) -> tuple[list[Listing], list[str]]:
     listings: list[Listing] = []
     processed_email_ids: list[str] = []
 
     try:
         from src.ingest import gmail as gmail_in
 
+        g = cfg()["gmail"]
+        read = 0
         for email in gmail_in.fetch_unprocessed(days=backfill_days):
+            if any(pat.lower() in email.subject.lower() for pat in g.get("skip_subjects", [])):
+                processed_email_ids.append(email.id)
+                stats["email:skipped"] = stats.get("email:skipped", 0) + 1
+                continue
+            if read >= g.get("max_emails_per_run", 12) or time.time() - started > RUN_BUDGET_S / 2 or fatal:
+                stats["email:deferred"] = stats.get("email:deferred", 0) + 1
+                continue
+            read += 1
             try:
                 found = score.extract_listings(email.source, email.subject, email.html, email.text)
                 stats[f"email:{email.source}"] = stats.get(f"email:{email.source}", 0) + len(found)
@@ -142,7 +155,7 @@ def run_once(dry_run: bool = False, backfill_days: int = 2) -> dict:
     seen = load_seen()
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
 
-    listings, email_ids = collect(backfill_days, stats, errors, fatal)
+    listings, email_ids = collect(backfill_days, stats, errors, fatal, started)
     store = None
     if not dry_run:
         from src.notion_store import NotionStore
@@ -179,7 +192,8 @@ def run_once(dry_run: bool = False, backfill_days: int = 2) -> dict:
             log.debug("reject %s: %s", l.title[:60], reason)
             continue
 
-        if scored >= max_scored or any(not f.startswith("Gmail") for f in fatal):
+        out_of_time = time.time() - started > RUN_BUDGET_S
+        if scored >= max_scored or out_of_time or any(not f.startswith("Gmail") for f in fatal):
             # cost cap reached, or scoring/Notion is broken: leave the rest for the next run
             # (an expired Gmail login alone doesn't stop Craigslist listings from being scored)
             seen.pop(key, None)

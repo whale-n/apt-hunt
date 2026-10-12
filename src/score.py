@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 from pydantic import BaseModel, Field
 
 from src.config import cfg
-from src.models import Listing, normalize_beds
+from src.models import Listing, canonical_url, normalize_beds
 
 log = logging.getLogger(__name__)
 
@@ -29,20 +29,22 @@ def model() -> str:
 # ---------------------------------------------------------------- extraction
 
 class ExtractedListing(BaseModel):
+    # Every field is required (use ""/0 for unknown): optional fields make the structured-output
+    # grammar too complex for the API ("Schema is too complex").
     url: str = Field(description="Direct link to this specific listing, exactly as it appears in the source")
-    title: str = ""
-    address: str = Field("", description="Street address if given, e.g. '150 N 7th St'")
-    unit: str = ""
-    neighborhood: str = ""
-    price: int | None = Field(None, description="Gross / asking monthly rent in USD")
-    net_effective: int | None = Field(None, description="Net effective monthly rent if stated (after free months)")
-    beds: str | None = Field(None, description="'studio', '1', '2', '3' ...")
-    baths: float | None = None
-    sqft: int | None = None
-    photos: list[str] = Field(default_factory=list, description="Image URLs belonging to this listing")
-    description: str = ""
-    available: str | None = Field(None, description="Move-in / availability date, ISO YYYY-MM-DD")
-    contact: str = Field("", description="Agent/landlord name, email or phone if shown")
+    title: str
+    address: str = Field(description="Street address if given, e.g. '150 N 7th St'; empty if unknown")
+    unit: str
+    neighborhood: str
+    price: int = Field(description="Gross / asking monthly rent in USD; 0 if unknown")
+    net_effective: int = Field(description="Net effective monthly rent if stated (after free months); 0 if not stated")
+    beds: str = Field(description="'studio', '1', '2', '3' ...; empty if unknown")
+    baths: float = Field(description="0 if unknown")
+    sqft: int = Field(description="0 if unknown")
+    photos: list[str] = Field(description="Image URLs belonging to this listing; empty list if none")
+    description: str
+    available: str = Field(description="Move-in / availability date, ISO YYYY-MM-DD; empty if unknown")
+    contact: str = Field(description="Agent/landlord name, email or phone if shown; empty if unknown")
 
 
 class Extraction(BaseModel):
@@ -96,18 +98,18 @@ def extract_listings(source: str, subject: str, content_html: str = "", content_
         out.append(
             Listing(
                 source=source,
-                url=e.url,
+                url=canonical_url(e.url) if e.url else "",
                 title=e.title,
                 address=address,
                 unit=e.unit,
-                price=e.price,
-                net_effective=e.net_effective,
-                beds=normalize_beds(e.beds),
-                baths=e.baths,
-                sqft=e.sqft,
+                price=e.price or None,
+                net_effective=e.net_effective or None,
+                beds=normalize_beds(e.beds or None),
+                baths=e.baths or None,
+                sqft=e.sqft or None,
                 photos=e.photos,
                 description=e.description,
-                available=e.available,
+                available=e.available or None,
                 contact=e.contact,
             )
         )
@@ -127,13 +129,12 @@ class ScoreResult(BaseModel):
     score: float = Field(description="0-10 fit score")
     tags: list[str] = Field(description=f"Subset of: {', '.join(TAGS)}")
     reasons: str = Field(description="2-4 short bullet points (start each with '- ') explaining the score")
-    est_sqft: int | None = Field(None, description="Square footage if stated or reasonably inferable, else null")
-    net_effective: int | None = Field(
-        None,
+    est_sqft: int = Field(description="Square footage if stated or reasonably inferable, else 0")
+    net_effective: int = Field(
         description="Net effective monthly rent: stated value, or computed from concessions as "
-        "gross * (lease months - free months) / lease months. Null if no concession is mentioned.",
+        "gross * (lease months - free months) / lease months. 0 if no concession is mentioned.",
     )
-    concession: str = Field("", description="Short description of any concession, e.g. '1 month free on 13-mo lease'")
+    concession: str = Field(description="Short description of any concession, e.g. '1 month free on 13-mo lease'; empty if none")
     draft_subject: str = Field(description="Subject line for an inquiry email about this listing")
     draft_body: str = Field(description="Short, warm inquiry email body (under 120 words), signed with the renter's name")
 
@@ -239,7 +240,7 @@ def score_listing(listing: Listing, examples: list[dict] | None = None) -> dict:
     if not r.move_in_ok:
         score = min(score, 3.0)
     s = cfg()["search"]
-    net = listing.net_effective or r.net_effective
+    net = listing.net_effective or r.net_effective or None
     if listing.price and listing.price > s["max_price"] and not (net and net <= s["max_price"]):
         score = min(score, 3.0)
         reasons = f"- Over ${s['max_price']:,} with no concession bringing net effective under budget\n" + reasons
@@ -253,7 +254,7 @@ def score_listing(listing: Listing, examples: list[dict] | None = None) -> dict:
         "reasons": reasons,
         "net_effective": net,
         "concession": r.concession,
-        "est_sqft": r.est_sqft,
+        "est_sqft": r.est_sqft or None,
         "draft_subject": r.draft_subject,
         "draft": r.draft_body,
     }

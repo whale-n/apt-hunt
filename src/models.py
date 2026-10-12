@@ -28,9 +28,11 @@ class Listing:
     @property
     def dedupe_key(self) -> str:
         """Stable identity across sources: the listing URL path when present, else address+unit+price."""
-        if self.url:
+        if self.url and not is_tracking_url(self.url):
             parts = urlsplit(self.url)
             basis = f"{parts.netloc.removeprefix('www.')}{parts.path.rstrip('/')}".lower()
+        elif self.url and not self.address:
+            basis = self.url  # unresolved tracking link and no address: the full link is the only identity
         else:
             basis = f"{norm_address(self.address)}|{self.unit.lower().strip()}|{self.price}"
         return hashlib.sha1(basis.encode()).hexdigest()[:16]
@@ -53,6 +55,37 @@ class Listing:
         if len(t) < 15:
             return None
         return hashlib.sha1(f"{self.source}|{t}".encode()).hexdigest()[:16]
+
+
+TRACKING_HOST = re.compile(r"^(links?|click|email|e|t|go|trk|url\d*)\.", re.I)
+
+
+def is_tracking_url(url: str) -> bool:
+    parts = urlsplit(url)
+    return bool(TRACKING_HOST.match(parts.netloc)) or "/click" in parts.path or "/ls/click" in parts.path
+
+
+def canonical_url(url: str) -> str:
+    """Follow email click-tracking redirects to the real listing URL and drop tracking query strings."""
+    import httpx
+
+    current = url
+    for _ in range(4):
+        if not is_tracking_url(current):
+            break
+        try:
+            r = httpx.get(current, follow_redirects=False, timeout=10, headers={"User-Agent": "Mozilla/5.0"})
+        except httpx.HTTPError:
+            break
+        location = r.headers.get("location")
+        if r.status_code not in (301, 302, 303, 307, 308) or not location:
+            break
+        current = location
+    parts = urlsplit(current)
+    if is_tracking_url(current):
+        return url  # could not resolve; keep the original
+    query = "&".join(q for q in parts.query.split("&") if q and not q.lower().startswith(("utm_", "mc_", "fbclid")))
+    return f"{parts.scheme}://{parts.netloc}{parts.path}" + (f"?{query}" if query else "")
 
 
 def norm_address(address: str) -> str:

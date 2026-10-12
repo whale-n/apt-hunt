@@ -54,6 +54,10 @@ gmail:
   feed_label: apt-feed
   processed_label: apt-processed
   hot_label: apt-hot
+  max_emails_per_run: 12
+  # Alert emails whose subject matches any of these are marked processed without being read
+  # (other saved searches on the same account).
+  skip_subjects: ["for Manhattan", "for New Jersey", "for Queens", "for Bronx", "for Staten Island"]
   # Sender substrings routed into the feed label (used by scripts/setup_gmail.py).
   feed_senders:
     streeteasy: [streeteasy.com]

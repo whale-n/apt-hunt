@@ -64,3 +64,22 @@ def test_parse_craigslist_item():
     assert l.url == "https://newyork.craigslist.org/brk/apa/d/brooklyn-sunny-willy-gem2/7978003746.html"
     assert l.photos == ["https://images.craigslist.org/01111_cmfqDDLp9ul_0mW0cU_600x450.jpg"]
     assert l.title.startswith("SUNNY")
+
+
+def test_tracking_urls_do_not_collapse_dedupe():
+    from src.models import is_tracking_url
+
+    t1 = "https://links.streeteasy.com/a/click?_t=aaa"
+    t2 = "https://links.streeteasy.com/a/click?_t=bbb"
+    assert is_tracking_url(t1) and not is_tracking_url("https://streeteasy.com/rental/5179805")
+    a = Listing(source="streeteasy", url=t1, address="150 N 7th St", unit="3A", price=4500)
+    b = Listing(source="streeteasy", url=t2, address="99 Berry St", unit="2", price=4200)
+    assert a.dedupe_key != b.dedupe_key
+    assert Listing(source="streeteasy", url=t1).dedupe_key != Listing(source="streeteasy", url=t2).dedupe_key
+
+
+def test_request_shape_errors_fail_the_run():
+    from src.run import auth_problem
+
+    assert auth_problem(Exception("Error code: 400 - invalid_request_error: Schema is too complex."))
+    assert auth_problem(Exception("read timeout")) is None
