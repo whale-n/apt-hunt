@@ -26,6 +26,12 @@ The poller exits non-zero only for problems that need a human. The log line star
 - **Anthropic credit balance too low**: add credits in the Claude Platform console.
 - **Notion token rejected**: re-share the Apt Hunt page with the `apt-hunt` integration.
 
+- **Claude API rejected the request**: a code change is needed (e.g. a structured-output schema with optional
+  fields is rejected as "Schema is too complex"; keep every schema field required).
+
+Runs are budgeted to ~5.5 min of work (12 alert emails and 40 scored listings at most) and always save state, so a
+backlog drains over several runs instead of timing out. Cancelled/timed-out runs do NOT trigger GitHub emails.
+
 ## Common commands
 ```
 make dry            # parse + score without writing anything
