@@ -114,11 +114,11 @@
   "buildings": 13,
   "units": 226,
   "addresses": [
+   "212 Grand Street",
    "167 North 6 Street",
    "143 North 8 Street",
    "236 North 11 Street",
    "163 North 6 Street",
-   "212 Grand Street",
    "252 Grand Street",
    "234 North 11 Street",
    "214 Grand Street",
@@ -4531,6 +4531,15 @@
   "buildings": 1,
   "units": 3,
   "addresses": [
+   "130 North 1 Street"
+  ],
+  "name": "Garden Hill Properties Inc.",
+  "mgmt_address": "268 Court Street Brooklyn Ny 11231"
+ },
+ {
+  "buildings": 1,
+  "units": 3,
+  "addresses": [
    "561 Driggs Avenue"
   ],
   "name": "Mews Operations Llc",
@@ -4598,15 +4607,6 @@
   ],
   "name": "149North 6 Street Llc",
   "mgmt_address": "1728 Putnam Ave Ridgewood Ny 11385"
- },
- {
-  "buildings": 1,
-  "units": 3,
-  "addresses": [
-   "130 North 1 Street"
-  ],
-  "name": "Garden Hill Properties Inc.",
-  "mgmt_address": "268 Court Street Brooklyn Ny 11231"
  },
  {
   "buildings": 1,
