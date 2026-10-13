@@ -1,21 +1,22 @@
 {
- "finished_at": "2026-10-13T02:37:39+00:00",
- "seconds": 1.6,
+ "finished_at": "2026-10-13T03:07:00+00:00",
+ "seconds": 12.3,
  "sources": {
-  "craigslist": 157
+  "craigslist": 158
  },
- "candidates": 157,
+ "candidates": 158,
  "duplicates": 157,
  "rejected": 0,
- "created": 0,
+ "created": 1,
  "hot": 0,
- "scored": 0,
+ "scored": 1,
  "deferred": 0,
  "fatal": [
   "Gmail login expired: run `uv run python scripts/gmail_auth.py` then `make secrets`"
  ],
  "errors": [
-  "gmail ingest: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})"
+  "gmail ingest: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})",
+  "notify Spacious, Sunny Studio w/ In Unit W/D, Dishwasher : ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})"
  ],
  "dry_run": false
 }
