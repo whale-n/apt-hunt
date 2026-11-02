@@ -32,12 +32,12 @@
   "lat": 40.7174201,
   "lng": -73.9563866,
   "walk_min": 0.7,
-  "owner_contact": "540 Driggs Llc",
+  "site_manager": "Charles Schwartz",
   "mgmt_company": "Driggs Flats Llc",
   "contact_name": "Charles Schwartz",
-  "mgmt_address": "836 Dekalb Avenue Brooklyn Ny 11221",
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211",
   "head_officer": "Charles Schwartz",
-  "site_manager": "Charles Schwartz",
+  "owner_contact": "540 Driggs Llc",
   "priority": 9.86
  },
  {
@@ -249,12 +249,12 @@
   "lat": 40.7181864,
   "lng": -73.9579012,
   "walk_min": 2.0,
-  "owner_contact": "149 North 7Th Partners Llc",
-  "mgmt_company": "David Leiter",
-  "contact_name": "David Leiter",
-  "mgmt_address": "149 North 7Th Street Brooklyn Ny 11249",
-  "head_officer": "David Leiter",
   "site_manager": "Alfred Matoshi",
+  "mgmt_company": "Aptmgmt135, Llc",
+  "contact_name": "David Leiter",
+  "mgmt_address": "418 Broadway Albany Ny 11207",
+  "head_officer": "David Leiter",
+  "owner_contact": "149 North 7Th Partners Llc",
   "priority": 9.6
  },
  {
@@ -366,11 +366,11 @@
   "lat": 40.7191938,
   "lng": -73.9580846,
   "walk_min": 3.7,
+  "site_manager": "Agnieszka Piekarski",
   "owner_contact": "Henry Piekarski",
-  "mgmt_company": "Agnieszka Piekarska",
-  "contact_name": "Agnieszka Piekarska",
+  "mgmt_company": "Agnieszka Piekarski",
+  "contact_name": "Agnieszka Piekarski",
   "mgmt_address": "99 Berry Street Brooklyn Ny 11249",
-  "site_manager": "Agnieszka Piekarska",
   "priority": 9.26
  },
  {
@@ -445,12 +445,12 @@
   "lat": 40.7152074,
   "lng": -73.9554429,
   "walk_min": 4.1,
-  "owner_contact": "250 Owner Llc",
   "mgmt_company": "Apex Management Group",
-  "contact_name": "Leuron Prelvukaj",
+  "contact_name": "Mark Levine",
   "mgmt_address": "401 Park Avenue South New York Ny 10016",
+  "site_manager": "Mark Levine",
+  "owner_contact": "250 Owner Llc",
   "head_officer": "Alex Kaskel",
-  "site_manager": "Leuron Prelvukaj",
   "priority": 9.18
  },
  {
@@ -525,12 +525,12 @@
   "lat": 40.7165819,
   "lng": -73.9537718,
   "walk_min": 4.3,
+  "site_manager": "Charles Schwartz",
   "owner_contact": "North 8 Holdings Llc",
+  "head_officer": "Charles Schwartz",
   "mgmt_company": "North 8 Holdings Llc",
   "contact_name": "Charles Schwartz",
-  "mgmt_address": "836 Dekalb Avenue Brooklyn Ny 11221",
-  "head_officer": "Charles Schwartz",
-  "site_manager": "Charles Schwartz",
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211",
   "priority": 9.14
  },
  {
@@ -707,7 +707,7 @@
   "contact_name": "Michael Dannunzio",
   "mgmt_address": "30 30 Havemeyer Street, Brooklyn Ny 11211",
   "head_officer": "Michael D'Annunzio",
-  "site_manager": "Michael D'Annunzio",
+  "site_manager": "Michael Dannunzio",
   "priority": 9.04
  },
  {
@@ -742,12 +742,12 @@
   "lat": 40.719817,
   "lng": -73.958398,
   "walk_min": 4.8,
-  "head_officer": "Kaiyue Yuan",
   "owner_contact": "Housie House Llc",
   "site_manager": "Kaiyue Yuan",
   "mgmt_company": "Kaiyue Yuan",
   "contact_name": "Kaiyue Yuan",
-  "mgmt_address": "242 Broome Street New York Ny 10002",
+  "mgmt_address": "70 Vestry Street New York Ny 10013",
+  "head_officer": "Kaiyue Yuan",
   "priority": 9.04
  },
  {
@@ -762,12 +762,12 @@
   "lat": 40.715956,
   "lng": -73.9536063,
   "walk_min": 4.9,
+  "site_manager": "Charles Schwartz",
   "owner_contact": "Havemeyer Estates Llc",
+  "head_officer": "Charles Schwartz",
   "mgmt_company": "Charles Schwartz",
   "contact_name": "Charles Schwartz",
-  "mgmt_address": "836 Dekalb Avenue Brooklyn Ny 11221",
-  "head_officer": "Charles Schwartz",
-  "site_manager": "Charles Schwartz",
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211",
   "priority": 9.02
  },
  {
@@ -804,7 +804,7 @@
   "owner_contact": "144 North 11 Llc",
   "mgmt_company": "North 11 Flats Llc",
   "contact_name": "Charles Schwartz",
-  "mgmt_address": "836 Dekalb Avenue Brooklyn Ny 11221",
+  "mgmt_address": "125 Broinquen Place Brooklyn Ny 11211",
   "head_officer": "Charles Schwartz",
   "priority": 8.98
  },
@@ -861,12 +861,12 @@
   "lat": 40.7193591,
   "lng": -73.9597295,
   "walk_min": 5.2,
+  "site_manager": "Charles Schwartz",
   "owner_contact": "99 North 7 Llc",
+  "head_officer": "Charles Schwartz",
   "mgmt_company": "North 7 Flats Llc",
   "contact_name": "Charles Schwartz",
-  "mgmt_address": "836 Dekalb Avenue Brooklyn Ny 11221",
-  "head_officer": "Charles Schwartz",
-  "site_manager": "Charles Schwartz",
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211",
   "priority": 8.96
  },
  {
@@ -1019,11 +1019,11 @@
   "lng": -73.9597611,
   "walk_min": 5.8,
   "owner_contact": "E Reyes Apartments Hdfc",
+  "site_manager": "Lenette Berrios",
   "mgmt_company": "Los Sures Management",
-  "contact_name": "Michael Gordon",
+  "contact_name": "Lenette Berrios",
   "mgmt_address": "434 South 5Th Street Brooklyn Ny 11211",
-  "head_officer": "Martin Needleman",
-  "site_manager": "Michael Gordon",
+  "head_officer": "Juan Ramos",
   "priority": 8.84
  },
  {
@@ -1197,12 +1197,12 @@
   "lat": 40.7205898,
   "lng": -73.9551183,
   "walk_min": 6.2,
+  "site_manager": "Charles Schwartz",
   "owner_contact": "96 Bedford Llc",
+  "head_officer": "Charles Schwartz",
   "mgmt_company": "Bedford Flats Llc",
   "contact_name": "Charles Schwartz",
-  "mgmt_address": "836 Dekalb Avenue Brooklyn Ny 11221",
-  "head_officer": "Charles Schwartz",
-  "site_manager": "Charles Schwartz",
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211",
   "priority": 8.76
  },
  {
@@ -1351,10 +1351,12 @@
   "lat": 40.7152145,
   "lng": -73.9524922,
   "walk_min": 6.8,
-  "mgmt_company": "Miroslaw Wejckert",
-  "contact_name": "Miroslaw Wejckert",
-  "mgmt_address": "300 North 8Th Steet Brooklyn Ny 112112164",
-  "site_manager": "Miroslaw Wejckert",
+  "owner_contact": "300 N 8Th Llc",
+  "mgmt_company": "300 N 8Th Llc",
+  "contact_name": "Joanna Tsue",
+  "mgmt_address": "300 North 8Th St Brooklyn Ny 11211",
+  "head_officer": "Joanna Tsue",
+  "site_manager": "Mireck Wejckert",
   "priority": 8.64
  },
  {
@@ -1369,11 +1371,11 @@
   "lat": 40.7206354,
   "lng": -73.9596566,
   "walk_min": 6.9,
-  "mgmt_company": "Wythe Avenue Properties Llc",
-  "contact_name": "Anthony Argento",
-  "mgmt_address": "203 Meserole Avenue Brooklyn Ny 11222",
-  "site_manager": "Anthony Argento",
-  "head_officer": "Anthony Argento",
+  "head_officer": "Gina Argento",
+  "mgmt_company": "Kaito Management Corp.",
+  "contact_name": "Steven Baker",
+  "mgmt_address": "497 3Rd Street Brooklyn Ny 11215",
+  "site_manager": "Ruben Hernandezcruz",
   "owner_contact": "Wythe Avenue Properties Llc",
   "priority": 8.62
  },
@@ -1410,11 +1412,11 @@
   "lng": -73.9516979,
   "walk_min": 7.1,
   "owner_contact": "520 Union Owner Llc",
-  "mgmt_company": "Apex Management Group",
-  "contact_name": "Leuron Prelvukaj",
-  "mgmt_address": "401 Park Avenue South New York Ny 10016",
   "head_officer": "Alex Kaskel",
-  "site_manager": "Leuron Prelvukaj",
+  "mgmt_company": "Apex Management Group",
+  "contact_name": "Mark Levine",
+  "mgmt_address": "401 Park Avenue South New York Ny 10016",
+  "site_manager": "Mark Levine",
   "priority": 8.58
  },
  {
@@ -1460,11 +1462,11 @@
   "lng": -73.9606993,
   "walk_min": 7.3,
   "owner_contact": "Mcap North 8Th Llc",
+  "head_officer": "Robert Morgenstern",
+  "site_manager": "Silvestre Cruz",
   "mgmt_company": "Canvas Property Group",
   "contact_name": "Kendall Pelzer",
   "mgmt_address": "215 Lexington Avenue New York Ny 10016",
-  "head_officer": "Robert Morgenstern",
-  "site_manager": "Silvestre Cruz",
   "priority": 8.54
  },
  {
@@ -1519,11 +1521,11 @@
   "lng": -73.9587412,
   "walk_min": 7.6,
   "owner_contact": "Los Sures Sip Hdfc",
-  "mgmt_company": "Los Sures Management Co.",
-  "contact_name": "Stephanie Diaz",
-  "mgmt_address": "434 So. 5Th Street Brooklyn Ny 11211",
   "head_officer": "Juan Ramos",
-  "site_manager": "Stephanie Diaz",
+  "site_manager": "Lenette Berrios",
+  "mgmt_company": "Los Sures Management Co.",
+  "contact_name": "Lenette Berrios",
+  "mgmt_address": "434 So. 5Th Street Brooklyn Ny 11211",
   "priority": 8.48
  },
  {
@@ -1598,11 +1600,11 @@
   "lng": -73.9609842,
   "walk_min": 7.8,
   "owner_contact": "South Ninth & Bedord L P {",
-  "mgmt_company": "Los Sures Management",
-  "contact_name": "Michael Gordon",
-  "mgmt_address": "434 South 5Th Street Bklyn Ny 11211",
   "head_officer": "Juan Ramos",
-  "site_manager": "Michael Gordon",
+  "site_manager": "Lenette Berrios",
+  "mgmt_company": "Los Sures Management",
+  "contact_name": "Lenette Berrios",
+  "mgmt_address": "434 South 5Th Street Bklyn Ny 11211",
   "priority": 8.44
  },
  {
@@ -1712,11 +1714,11 @@
   "lng": -73.9577172,
   "walk_min": 8.2,
   "owner_contact": "Los Sures Sip Hdfc",
-  "mgmt_company": "Los Sures Sip Hdfc",
-  "contact_name": "Michael Gordon",
-  "mgmt_address": "434 South 5Th St Brooklyn Ny 11211",
   "head_officer": "Juan Ramos",
-  "site_manager": "Michael Gordon",
+  "mgmt_company": "Los Sures Sip Hdfc",
+  "contact_name": "Lenette Berrios",
+  "mgmt_address": "434 South 5Th St Brooklyn Ny 11211",
+  "site_manager": "Lenette Berrios",
   "priority": 8.36
  },
  {
@@ -1883,11 +1885,11 @@
   "lng": -73.9591637,
   "walk_min": 9.0,
   "owner_contact": "209 So. 2Nd St Hdfc",
-  "mgmt_company": "Los Sures Management",
-  "contact_name": "Michael Gordon",
-  "mgmt_address": "434 South 5Th Street Brooklyn Ny 11211",
   "head_officer": "Juan Ramos",
-  "site_manager": "Michael Gordon",
+  "site_manager": "Lenette Berrios",
+  "mgmt_company": "Los Sures Management",
+  "contact_name": "Lenette Berrios",
+  "mgmt_address": "434 South 5Th Street Brooklyn Ny 11211",
   "priority": 8.2
  },
  {
@@ -1964,7 +1966,7 @@
   "owner_contact": "41 Skillman Llc",
   "mgmt_company": "Charles Schwartz",
   "contact_name": "Charles Schwartz",
-  "mgmt_address": "836 Dekalb Ave Brooklyn Ny 11221",
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211",
   "head_officer": "Charles Schwartz",
   "priority": 8.14
  },
@@ -2059,12 +2061,12 @@
   "lat": 40.7123299,
   "lng": -73.9602604,
   "walk_min": 9.7,
-  "mgmt_company": "Los Sures Management",
-  "contact_name": "Michael Gordon",
-  "mgmt_address": "434 South 5Th Street Brooklyn Ny 11211",
-  "head_officer": "Juan Ramos",
-  "site_manager": "Edwin Gerena",
+  "site_manager": "Lenette Berrios",
   "owner_contact": "Los Sures Sip Hdfc",
+  "mgmt_company": "Los Sures Management Co.",
+  "contact_name": "Lenette Berrios",
+  "mgmt_address": "434 So. 5Th Street Brooklyn Ny 11211",
+  "head_officer": "Juan Ramos",
   "priority": 8.06
  },
  {
@@ -2100,11 +2102,11 @@
   "lng": -73.9603902,
   "walk_min": 9.7,
   "owner_contact": "Los Sures Sip Hdfc",
-  "mgmt_company": "Los Sures Management Co.",
-  "contact_name": "Michael Gordon",
-  "mgmt_address": "434 So. 5Th Street Brooklyn Ny 11211",
   "head_officer": "Juan Ramos",
-  "site_manager": "Michael Gordon",
+  "site_manager": "Lenette Berrios",
+  "mgmt_company": "Los Sures Management Co.",
+  "contact_name": "Lenette Berrios",
+  "mgmt_address": "434 So. 5Th Street Brooklyn Ny 11211",
   "priority": 8.06
  },
  {
@@ -2143,8 +2145,8 @@
   "mgmt_company": "Livingston Management Services",
   "contact_name": "Austen Rabbie",
   "mgmt_address": "225 West 35Th Street New York Ny 10001",
-  "head_officer": "Meng Lee",
   "site_manager": "Julio Morales",
+  "head_officer": "Karim Elsayyad",
   "priority": 8.04
  },
  {
@@ -2198,12 +2200,12 @@
   "lat": 40.7137992,
   "lng": -73.9628783,
   "walk_min": 10.0,
+  "site_manager": "Jack Basch",
   "owner_contact": "115 South 2 Llc",
-  "mgmt_company": "Mordechai Landau",
-  "contact_name": "Mordechai Landau",
-  "mgmt_address": "365 Flushing Avenue Brooklyn Ny 11205",
-  "head_officer": "Mordechai Landau",
-  "site_manager": "Mordechai Landau",
+  "head_officer": "Martin Landau",
+  "mgmt_company": "Martin Landau",
+  "contact_name": "Martin Landau",
+  "mgmt_address": "199 Lee Avenue Brooklyn Ny 11211",
   "priority": 8.0
  },
  {
@@ -2439,10 +2441,10 @@
   "lng": -73.9567002,
   "walk_min": 1.0,
   "owner_contact": "Henryk Zdrodowski",
-  "mgmt_company": "Henryk Zdrodowski",
-  "contact_name": "Henryk Zdrodowski",
-  "mgmt_address": "84-54 Goldington Ct Middle Village Ny 11377",
   "site_manager": "Brian Zdrodowski",
+  "mgmt_company": "Brian Zdrodowski",
+  "contact_name": "Brian Zdrodowski",
+  "mgmt_address": "8454 Goldington Ct Middle Village Ny 11379",
   "priority": 7.8
  },
  {
@@ -2837,7 +2839,7 @@
   "contact_name": "Rony Kravel",
   "mgmt_address": "225 West 35Th Street New York Ny 10001",
   "head_officer": "Robert Li",
-  "site_manager": "Glandstone Daley",
+  "site_manager": "Gladstone Daley",
   "priority": 7.64
  },
  {
@@ -2922,12 +2924,12 @@
   "lat": 40.7133904,
   "lng": -73.9555668,
   "walk_min": 7.0,
+  "site_manager": "Visar Hajrizi",
+  "head_officer": "Alison Maguire",
   "owner_contact": "Hope Street Owner Llc",
   "mgmt_company": "Alison Maguire",
   "contact_name": "Alison Maguire",
   "mgmt_address": "152 West 57Th Street New York Ny 10019",
-  "head_officer": "Alison Maguire",
-  "site_manager": "Visar Hajrizi",
   "priority": 7.6
  },
  {
@@ -2986,8 +2988,8 @@
   "mgmt_company": "Bedford Management Company",
   "contact_name": "Matthew Gelfand",
   "mgmt_address": "230 North 6 Street Brooklyn Ny 11211",
-  "head_officer": "Darren Anikstein",
   "site_manager": "Matthew Gelfand",
+  "head_officer": "Darren Anikstein",
   "priority": 7.58
  },
  {
@@ -3285,6 +3287,26 @@
   "priority": 7.5
  },
  {
+  "bbl": "3023290032",
+  "address": "215 North 6 Street",
+  "units": 6,
+  "year_built": 1910,
+  "year_altered": null,
+  "bldg_class": "C2",
+  "floors": 3.0,
+  "owner": "215 N. 6TH STREET LLC",
+  "lat": 40.7160502,
+  "lng": -73.9558969,
+  "walk_min": 2.5,
+  "mgmt_company": "John Imperatore",
+  "contact_name": "John Imperatore",
+  "mgmt_address": "97 Greenpoint Ave Brooklyn Ny 11222",
+  "owner_contact": "215 N. 6Th Street Llc",
+  "site_manager": "John Imperatore",
+  "head_officer": "John Imperatore",
+  "priority": 7.5
+ },
+ {
   "bbl": "3023370041",
   "address": "191 North 5 Street",
   "units": 8,
@@ -3506,12 +3528,12 @@
   "lat": 40.7189049,
   "lng": -73.9562485,
   "walk_min": 2.9,
-  "mgmt_company": "Jozef Jozef",
-  "contact_name": "Jozef Jozef",
-  "mgmt_address": "8715 63Rd Drive Rego Park Ny 11374",
   "head_officer": "Jozef Regula",
   "owner_contact": "145 Bedford Llc.",
-  "site_manager": "Jozef Jozef",
+  "site_manager": "Jozef Regula",
+  "mgmt_company": "Jozef Regula",
+  "contact_name": "Jozef Regula",
+  "mgmt_address": "8715 63Rd Drive Rego Park Ny 11374",
   "priority": 7.42
  },
  {
@@ -3682,12 +3704,12 @@
   "lat": 40.7190617,
   "lng": -73.9571864,
   "walk_min": 3.1,
-  "owner_contact": "152 North 9 Apt Corp",
-  "head_officer": "Rachel Randolph",
-  "site_manager": "Keith Mcalpine",
   "mgmt_company": "152 North 9 Apt Corp",
   "contact_name": "Rachel Randolph",
   "mgmt_address": "152 N9 Brooklyn Ny 11249",
+  "owner_contact": "152 North 9 Apt Corp",
+  "head_officer": "Rachel Randolph",
+  "site_manager": "Keith Mcalpine",
   "priority": 7.38
  },
  {
@@ -3831,6 +3853,25 @@
   "priority": 7.34
  },
  {
+  "bbl": "3023110016",
+  "address": "148 North 9 Street",
+  "units": 8,
+  "year_built": 1900,
+  "year_altered": null,
+  "bldg_class": "C1",
+  "floors": 4.0,
+  "owner": "KAIM JAN",
+  "lat": 40.7191496,
+  "lng": -73.957327,
+  "walk_min": 3.3,
+  "owner_contact": "Jan Kaim",
+  "site_manager": "Jan Kaim",
+  "mgmt_company": "Jan Kaim",
+  "contact_name": "Jan Kaim",
+  "mgmt_address": "53 India St Brooklyn Ny 11222",
+  "priority": 7.34
+ },
+ {
   "bbl": "3023190002",
   "address": "119 Berry Street",
   "units": 7,
@@ -3845,7 +3886,7 @@
   "owner_contact": "Berry Works",
   "mgmt_company": "Berry Works Llc",
   "contact_name": "Mark Litwinko",
-  "mgmt_address": "119 Berry St Brooklyn Ny 11211",
+  "mgmt_address": "119 Berry Brooklyn Ny 11249",
   "head_officer": "Mark Litwinko",
   "site_manager": "Mark Litwinko",
   "priority": 7.34
@@ -4097,12 +4138,12 @@
   "lat": 40.7177568,
   "lng": -73.9541786,
   "walk_min": 3.6,
-  "owner_contact": "Stockbridge 60G Driggs 225 Owner Llc",
+  "site_manager": "Peter Karellas",
   "mgmt_company": "620 Mgmt",
-  "contact_name": "Honghui Lee",
-  "mgmt_address": "6 Greene Street New York Ny 10013",
+  "contact_name": "Peter Karellas",
+  "mgmt_address": "54 W 21St Street New York Ny 10010",
   "head_officer": "Bastien Broda",
-  "site_manager": "Honghui Lee",
+  "owner_contact": "Stockbridge 60G Driggs 225 Owner Llc",
   "priority": 7.28
  },
  {
@@ -4117,12 +4158,12 @@
   "lat": 40.7193964,
   "lng": -73.9568218,
   "walk_min": 3.6,
-  "head_officer": "Josephine Canka",
   "owner_contact": "145 N 9 Realty Corp",
-  "site_manager": "Josephine Canka",
   "mgmt_company": "Josephine Canka",
   "contact_name": "Josephine Canka",
   "mgmt_address": "131 Ainslie St Brooklyn Ny 11211",
+  "head_officer": "Josephine Canka",
+  "site_manager": "Josephine Canka",
   "priority": 7.28
  },
  {
@@ -4512,12 +4553,12 @@
   "lat": 40.7196571,
   "lng": -73.9566593,
   "walk_min": 4.1,
-  "owner_contact": "148 N 10 Owner Llc",
   "mgmt_company": "Judith Drive Llc",
   "contact_name": "David Cohen",
   "mgmt_address": "41 Flatbush Avenue Brooklyn Ny 11217",
   "head_officer": "Diego Bonet",
   "site_manager": "Amiel Schertz",
+  "owner_contact": "148 N 10 Owner Llc",
   "priority": 7.18
  },
  {
@@ -4553,11 +4594,11 @@
   "lng": -73.9586913,
   "walk_min": 9.1,
   "owner_contact": "197-201 Roebling Street",
+  "site_manager": "Edwin Gerena",
+  "head_officer": "Juan Ramos",
   "mgmt_company": "Los Sures Management Co.,Inc.",
-  "contact_name": "Michael Gordon",
+  "contact_name": "Lenette Berrios",
   "mgmt_address": "434 South 5Th Brooklyn Ny 11211",
-  "head_officer": "Martin Needleman",
-  "site_manager": "Michael Gordon",
   "priority": 7.18
  },
  {
@@ -4609,6 +4650,7 @@
   "lat": 40.7195497,
   "lng": -73.9555122,
   "walk_min": 4.3,
+  "site_manager": "Marian Pekal",
   "mgmt_company": "Marian Pekal",
   "contact_name": "Marian Pekal",
   "mgmt_address": "121 Bedford Avenue Brooklyn Ny 11211",
@@ -4645,12 +4687,12 @@
   "lat": 40.7197453,
   "lng": -73.9574457,
   "walk_min": 4.3,
+  "site_manager": "Charles Schwartz",
   "owner_contact": "Berry Estates Llc",
   "mgmt_company": "Berry Estates Llc",
   "contact_name": "Charles Schwartz",
-  "mgmt_address": "836 Dekalb Avenue Brooklyn Ny 11221",
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211",
   "head_officer": "Charles Schwartz",
-  "site_manager": "Charles Schwartz",
   "priority": 7.14
  },
  {
@@ -4863,11 +4905,11 @@
   "lng": -73.9536276,
   "walk_min": 4.5,
   "owner_contact": "Artlife 249 North 8Th Street",
+  "site_manager": "Elie Levy",
+  "head_officer": "Elie Levy",
   "mgmt_company": "Elie Levy",
   "contact_name": "Elie Levy",
   "mgmt_address": "1917 East 1St Street Brooklyn Ny 11223",
-  "site_manager": "Elie Levy",
-  "head_officer": "Elie Levy",
   "priority": 7.1
  },
  {
@@ -4903,11 +4945,11 @@
   "lng": -73.9547475,
   "walk_min": 4.6,
   "owner_contact": "174 North 11Th Partners Llc",
-  "mgmt_company": "Choice Ny Management",
-  "contact_name": "Stephanie Knight",
-  "mgmt_address": "254 West 31St Street New York Ny 10001",
   "head_officer": "Darren Anikstein",
   "site_manager": "Jack Harari",
+  "mgmt_company": "Choice Ny Management",
+  "contact_name": "Adam Lichtenstein",
+  "mgmt_address": "254 West 31St Street New York Ny 10001",
   "priority": 7.08
  },
  {
@@ -4961,12 +5003,12 @@
   "lat": 40.7164528,
   "lng": -73.9535591,
   "walk_min": 4.6,
+  "head_officer": "Alex Kaskel",
   "owner_contact": "251 North 8Th Owner Llc",
   "mgmt_company": "Apex Management Group",
-  "contact_name": "Leuron Prelvukaj",
+  "contact_name": "Mark Levine",
   "mgmt_address": "401 Park Avenue South New York Ny 10016",
-  "head_officer": "Alex Kaskel",
-  "site_manager": "Leuron Prelvukaj",
+  "site_manager": "Mark Levine",
   "priority": 7.08
  },
  {
@@ -5119,12 +5161,12 @@
   "lat": 40.7164088,
   "lng": -73.9534906,
   "walk_min": 4.7,
-  "owner_contact": "251 North 8Th Owner Llc",
-  "head_officer": "Alex Kaskel",
-  "site_manager": "Leuron Prelvukaj",
   "mgmt_company": "Apex Management Group",
-  "contact_name": "Leuron Prelvukaj",
+  "contact_name": "Mark Levine",
   "mgmt_address": "401 Park Avenue South New York Ny 10016",
+  "head_officer": "Alex Kaskel",
+  "site_manager": "Mark Levine",
+  "owner_contact": "251 North 8Th Owner Llc",
   "priority": 7.06
  },
  {
@@ -5157,7 +5199,7 @@
   "lat": 40.7170455,
   "lng": -73.960456,
   "walk_min": 4.7,
-  "owner_contact": "Northside Gardens Inc",
+  "owner_contact": "Northside Garden Inc",
   "mgmt_company": "Metro Mgmt Development",
   "contact_name": "Steven Schwartz",
   "mgmt_address": "107 North 4Th St Brooklyn Ny 11249",
@@ -5495,8 +5537,8 @@
   "mgmt_company": "Santino Ploumitsakos",
   "contact_name": "Santino Ploumitsakos",
   "mgmt_address": "79-63 68 Road Middle Village Ny 11379",
-  "head_officer": "Victor Celli",
   "site_manager": "Santino Ploumitsakos",
+  "head_officer": "Kathryn Celli",
   "priority": 6.98
  },
  {
@@ -5648,11 +5690,11 @@
   "lat": 40.7173229,
   "lng": -73.9609031,
   "walk_min": 5.3,
-  "owner_contact": "99 North 4 Flats Llc",
-  "mgmt_company": "99 North 4 Flats Llc",
+  "owner_contact": "99 North 4 Llc",
+  "mgmt_company": "Charles Schwartz",
   "contact_name": "Charles Schwartz",
-  "mgmt_address": "836 Dekalb Ave Brooklyn Ny 11221",
-  "head_officer": "David Blum",
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211",
+  "head_officer": "Charles Schwartz",
   "priority": 6.94
  },
  {
@@ -5741,12 +5783,12 @@
   "lat": 40.715215,
   "lng": -73.9538233,
   "walk_min": 5.4,
-  "owner_contact": "Kam On Management",
+  "owner_contact": "Kam On Management Inc",
   "mgmt_company": "Kam On Management Inc",
-  "contact_name": "On Lam",
-  "mgmt_address": "777 Maguire Avenue Staten Island Ny 10309",
-  "head_officer": "On Lam",
-  "site_manager": "On Lam",
+  "contact_name": "Onchuen Lam",
+  "mgmt_address": "777 Maguire Ave Staten Island Ny 10309",
+  "head_officer": "Onchuen Lam",
+  "site_manager": "Onchuen Lam",
   "priority": 6.92
  },
  {
@@ -6073,11 +6115,11 @@
   "lat": 40.7191919,
   "lng": -73.9604872,
   "walk_min": 5.8,
-  "mgmt_company": "Salvatore Girgonti",
+  "owner_contact": "Snj Wythe Avenue Llc",
+  "mgmt_company": "Christina Girgenti",
   "contact_name": "Christina Girgenti",
   "mgmt_address": "8304 13Th Avenue Brooklyn Ny 11228",
-  "owner_contact": "Shore Road Holding Corp",
-  "head_officer": "Nicholas Yannello",
+  "head_officer": "Salvatore Girgenti",
   "site_manager": "Christina Girgenti",
   "priority": 6.84
  },
@@ -6406,7 +6448,6 @@
   "lng": -73.9568759,
   "walk_min": 6.1,
   "head_officer": "Solomon Cohen",
-  "site_manager": "Jack Cohen",
   "owner_contact": "25 Hope Street Associates Llc",
   "mgmt_company": "Jack Cohen",
   "contact_name": "Jack Cohen",
@@ -6688,12 +6729,12 @@
   "lat": 40.7136218,
   "lng": -73.9577851,
   "walk_min": 6.5,
-  "owner_contact": "161 Roebling Street Llc",
-  "head_officer": "Michael Schlegel",
+  "owner_contact": "161 Roebling Owner Llc",
   "mgmt_company": "Livingston Management Services",
   "contact_name": "Austen Rabbie",
   "mgmt_address": "225 West 35Th Street New York Ny 10001",
   "site_manager": "Deshira Noka",
+  "head_officer": "Douglas Baillie",
   "priority": 6.7
  },
  {
@@ -6819,12 +6860,12 @@
   "lat": 40.7150719,
   "lng": -73.9528386,
   "walk_min": 6.6,
-  "owner_contact": "North Side Flats Llc",
+  "site_manager": "Charles Schwartz",
   "mgmt_company": "Charles Schwartz",
   "contact_name": "Charles Schwartz",
-  "mgmt_address": "836 Dekalb Avenue Brooklyn Ny 11221",
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211",
+  "owner_contact": "North Side Flats Llc",
   "head_officer": "Charles Schwartz",
-  "site_manager": "Charles Schwartz",
   "priority": 6.68
  },
  {
@@ -6896,12 +6937,12 @@
   "lat": 40.7185053,
   "lng": -73.9520461,
   "walk_min": 6.7,
-  "owner_contact": "The Mancini Family Ltd. Partnership",
-  "mgmt_company": "Lucia Mancini",
-  "contact_name": "Lucy Mancini",
+  "owner_contact": "Rel Realty, Inc",
+  "mgmt_company": "Lucy Mancini",
+  "contact_name": "Lucia Mancini",
   "mgmt_address": "600 Union Ave Brooklyn Ny 11211",
-  "head_officer": "Frank Mancini",
-  "site_manager": "Lucy Mancini",
+  "head_officer": "Elena Mancini",
+  "site_manager": "Frank Mancini",
   "priority": 6.66
  },
  {
@@ -7041,8 +7082,8 @@
   "mgmt_company": "Santino Ploumitsakos",
   "contact_name": "Santino Ploumitsakos",
   "mgmt_address": "79-63 68 Road Middle Village Ny 11379",
-  "head_officer": "Victor Celli",
   "site_manager": "Santino Ploumitsakos",
+  "head_officer": "Kathryn Celli",
   "priority": 6.62
  },
  {
@@ -7076,10 +7117,10 @@
   "lat": 40.715508,
   "lng": -73.9522214,
   "walk_min": 6.9,
-  "owner_contact": "Sal Gjenasaj",
   "mgmt_company": "Besnik Gjenasaj",
   "contact_name": "Besnik Gjenasaj",
   "mgmt_address": "7223 Ingram Forest Hills Ny 11375",
+  "site_manager": "Besnik Gjenasaj",
   "priority": 6.62
  },
  {
@@ -7245,11 +7286,11 @@
   "lat": 40.7162346,
   "lng": -73.9570475,
   "walk_min": 1.9,
-  "head_officer": "Julio Bermudez",
-  "mgmt_company": "Julio Bermudez",
+  "mgmt_company": "Tyla Payano",
   "contact_name": "Tyla Payano",
   "mgmt_address": "579 Driggs Brooklyn Ny 11211",
   "owner_contact": "Julio & Olga Bermudez Trust",
+  "head_officer": "Rosa Bermudez",
   "priority": 6.62
  },
  {
@@ -7405,8 +7446,7 @@
   "lat": 40.7162995,
   "lng": -73.962105,
   "walk_min": 7.1,
-  "site_manager": "Moses Jacobowitz",
-  "owner_contact": "Moses Jacobowitz",
+  "owner_contact": "Mojo On Metro Llc",
   "mgmt_company": "Max Jacobs",
   "contact_name": "Max Jacobs",
   "mgmt_address": "65 South 11 Street Brooklyn Ny 11249",
@@ -7426,10 +7466,10 @@
   "lng": -73.9566348,
   "walk_min": 2.1,
   "owner_contact": "Robert Nicholson",
+  "site_manager": "Joshua Rosen",
   "mgmt_company": "Xl Real Property Management",
   "contact_name": "Dylan Pichulik",
   "mgmt_address": "80 Fifth Avenue New York Ny 10011",
-  "site_manager": "Dylan Pichulik",
   "priority": 6.58
  },
  {
@@ -7616,7 +7656,7 @@
   "walk_min": 7.2,
   "mgmt_company": "Jerzy Plaza",
   "contact_name": "Jerzy Plaza",
-  "mgmt_address": "67 North 7 Street Brooklyn Ny 11249",
+  "mgmt_address": "638 Leonard Street Brooklyn Ny 11222",
   "site_manager": "Jerzy Plaza",
   "priority": 6.56
  },
@@ -7883,12 +7923,12 @@
   "lat": 40.7165589,
   "lng": -73.9513008,
   "walk_min": 7.4,
-  "owner_contact": "30 Withers St Llc",
   "mgmt_company": "Anthony Masullo",
   "contact_name": "Anthony Masullo",
-  "mgmt_address": "227 Ainslie Brooklyn Ny 11211",
-  "head_officer": "Joseph Masullo",
-  "site_manager": "Anthony Masullo",
+  "mgmt_address": "412 Beach 142 St Rockaway Park Ny 11694",
+  "site_manager": "Felice Masullo",
+  "head_officer": "Felice Masullo",
+  "owner_contact": "Jaffa Gotham Llc",
   "priority": 6.52
  },
  {
@@ -7903,12 +7943,12 @@
   "lat": 40.7169568,
   "lng": -73.9511779,
   "walk_min": 7.5,
-  "owner_contact": "37 Withers Street,Llc",
-  "mgmt_company": "Joseph Malench",
-  "contact_name": "Joseph Malench",
+  "head_officer": "Matthew Malench",
+  "site_manager": "Matthew Malench",
+  "owner_contact": "37 Withers Street, Llc",
+  "mgmt_company": "Matthew Malench",
+  "contact_name": "Matthew Malench",
   "mgmt_address": "37 Withers Street Brooklyn Ny 11211",
-  "head_officer": "Joseph Malench",
-  "site_manager": "Maria Piazzi",
   "priority": 6.5
  },
  {
@@ -7923,11 +7963,11 @@
   "lat": 40.7172478,
   "lng": -73.9511813,
   "walk_min": 7.5,
+  "site_manager": "Charles Schwartz",
   "mgmt_company": "Charles Schwartz",
   "contact_name": "Charles Schwartz",
-  "mgmt_address": "836 Dekalb Avenue Brooklyn Ny 11221",
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211",
   "owner_contact": "22 Frost St Llc",
-  "site_manager": "Charles Schwartz",
   "head_officer": "Charles Schwartz",
   "priority": 6.5
  },
@@ -7948,22 +7988,6 @@
   "contact_name": "Mordechai Katz",
   "mgmt_address": "735 Bedford Ave Brooklyn Ny 11205",
   "head_officer": "Mordechei Katz",
-  "priority": 6.5
- },
- {
-  "bbl": "3023290032",
-  "address": "215 North 6 Street",
-  "units": 6,
-  "year_built": 1910,
-  "year_altered": null,
-  "bldg_class": "C2",
-  "floors": 3.0,
-  "owner": "215 N. 6TH STREET LLC",
-  "lat": 40.7160502,
-  "lng": -73.9558969,
-  "walk_min": 2.5,
-  "owner_contact": "John Imperatore",
-  "site_manager": "John Imperatore",
   "priority": 6.5
  },
  {
@@ -8280,12 +8304,12 @@
   "lat": 40.7131392,
   "lng": -73.9591417,
   "walk_min": 7.8,
+  "head_officer": "Charles Schwartz",
+  "site_manager": "Charles Schwartz",
   "owner_contact": "South First Enterprise Llc",
   "mgmt_company": "South First Enterprise Llc",
   "contact_name": "Charles Schwartz",
-  "mgmt_address": "836 Dekalb Ave Brooklyn Ny 11221",
-  "head_officer": "Charles Schwartz",
-  "site_manager": "Charles Schwartz",
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211",
   "priority": 6.44
  },
  {
@@ -8300,10 +8324,10 @@
   "lat": 40.7179915,
   "lng": -73.9509895,
   "walk_min": 7.8,
-  "owner_contact": "28 Richardson Llc",
   "mgmt_company": "Charles Schwartz",
   "contact_name": "Charles Schwartz",
-  "mgmt_address": "836 Dekalb Ave Brooklyn Ny 11221",
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211",
+  "owner_contact": "28 Richardson Llc",
   "head_officer": "Charles Scwartz",
   "priority": 6.44
  },
@@ -8424,11 +8448,11 @@
   "lat": 40.7180025,
   "lng": -73.9508993,
   "walk_min": 8.0,
-  "head_officer": "Jorge Mastropietro",
-  "owner_contact": "Scuadra 30Richardson Llc",
-  "mgmt_company": "Scuadra Properties Llc",
+  "mgmt_company": "Charles Schwartz",
   "contact_name": "Charles Schwartz",
-  "mgmt_address": "836 Dekalb Ave Brooklyn Ny 11221",
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211",
+  "owner_contact": "30 Richardson Street Llc",
+  "head_officer": "Charles Schwartz",
   "priority": 6.4
  },
  {
@@ -8582,11 +8606,11 @@
   "lng": -73.9591825,
   "walk_min": 3.1,
   "owner_contact": "131 North 5 Street",
-  "mgmt_company": "Silvia Lucero",
-  "contact_name": "Silvia Lucero",
-  "mgmt_address": "1036 Lafayette Avenue Brooklyn Ny 11221",
-  "head_officer": "Silvia Lucero",
   "site_manager": "Semih Levi",
+  "mgmt_company": "131 North 5 Street Condominium",
+  "contact_name": "John Kong",
+  "mgmt_address": "1036 Lafayette Avenue Brooklyn Ny 11221",
+  "head_officer": "John Kong",
   "priority": 6.38
  },
  {
@@ -8718,12 +8742,12 @@
   "lat": 40.7180589,
   "lng": -73.9546727,
   "walk_min": 3.2,
-  "owner_contact": "Stockbridge 60G Driggs 205 Owner Llc",
-  "mgmt_company": "620 Mgmt",
-  "contact_name": "Honghui Lee",
-  "mgmt_address": "6 Greene Street New York Ny 10013",
   "head_officer": "Bastien Broda",
-  "site_manager": "Honghui Lee",
+  "site_manager": "Peter Karellas",
+  "owner_contact": "Stockbridge 60G Driggs 205 Owner",
+  "mgmt_company": "620 Mgmt",
+  "contact_name": "Peter Karellas",
+  "mgmt_address": "54 W 21St Street New York Ny 10010",
   "priority": 6.36
  },
  {
@@ -8919,22 +8943,6 @@
   "priority": 6.34
  },
  {
-  "bbl": "3023110016",
-  "address": "148 North 9 Street",
-  "units": 8,
-  "year_built": 1900,
-  "year_altered": null,
-  "bldg_class": "C1",
-  "floors": 4.0,
-  "owner": "KAIM JAN",
-  "lat": 40.7191496,
-  "lng": -73.957327,
-  "walk_min": 3.3,
-  "owner_contact": "Jan Kaim",
-  "site_manager": "Jan Kaim",
-  "priority": 6.34
- },
- {
   "bbl": "3023370031",
   "address": "213 North 5 Street",
   "units": 3,
@@ -8985,12 +8993,12 @@
   "lat": 40.7154855,
   "lng": -73.9509264,
   "walk_min": 8.4,
+  "site_manager": "Charles Schwartz",
+  "head_officer": "Charles Schwartz",
   "owner_contact": "25 Skillman Realty Llc",
   "mgmt_company": "25 Skillman Realty Llc",
   "contact_name": "Charles Schwartz",
-  "mgmt_address": "836 Dekalb Ave Brooklyn Ny 11221",
-  "head_officer": "Charles Schwartz",
-  "site_manager": "Charles Schwartz",
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211",
   "priority": 6.32
  },
  {
@@ -9280,12 +9288,12 @@
   "lat": 40.7170389,
   "lng": -73.9504635,
   "walk_min": 8.5,
-  "owner_contact": "Fred Gelfand",
+  "head_officer": "Fred Gelfand",
   "mgmt_company": "Bedford Management Company",
   "contact_name": "Matthew Gelfand",
   "mgmt_address": "230 North 6 Street Brooklyn Ny 11211",
+  "owner_contact": "G&S Business Group Llc",
   "site_manager": "Matthew Gelfand",
-  "head_officer": "Fred Gelfand",
   "priority": 6.3
  },
  {
@@ -9436,11 +9444,11 @@
   "lng": -73.9507244,
   "walk_min": 8.6,
   "owner_contact": "Jltalt, Llc",
-  "mgmt_company": "Jltalt Llc",
-  "contact_name": "Jennifer Dipaola",
-  "mgmt_address": "87-15 162 Avenue Howard Beach Ny 11414",
   "head_officer": "Jennifer Dipaola",
   "site_manager": "Jennifer Dipaola",
+  "mgmt_company": "Jltalt Llc",
+  "contact_name": "Jennifer Dipaola",
+  "mgmt_address": "29 Skillman Avenue Brooklyn Ny 11211",
   "priority": 6.28
  },
  {
@@ -9455,12 +9463,12 @@
   "lat": 40.7170471,
   "lng": -73.950377,
   "walk_min": 8.6,
-  "owner_contact": "55 Withers Street Llc",
-  "mgmt_company": "Brian Lupo",
-  "contact_name": "Brian Lupo",
-  "mgmt_address": "55 Withers Street Brooklyn Ny 11211",
-  "head_officer": "Barbara Lupo",
-  "site_manager": "Thomas Lupo",
+  "head_officer": "Alon Ashourzadeh",
+  "site_manager": "Alon Ashourzadeh",
+  "mgmt_company": "55 Withers Llc",
+  "contact_name": "Alon Ashourzadeh",
+  "mgmt_address": "6 E 45Th Street New York Ny 10017",
+  "owner_contact": "55 Withers Llc",
   "priority": 6.28
  },
  {
@@ -9515,12 +9523,12 @@
   "lat": 40.7131479,
   "lng": -73.9531646,
   "walk_min": 8.7,
-  "owner_contact": "Ainslie Venture Llc",
-  "mgmt_company": "Plaza Management Usa",
-  "contact_name": "Jacob Bernat",
-  "mgmt_address": "50 Rutledge Street Brooklyn Ny 11249",
-  "head_officer": "Meyer Chetrit",
-  "site_manager": "Mark Beroukhim",
+  "mgmt_company": "Nyc Management",
+  "contact_name": "Michael Beson",
+  "mgmt_address": "13 West 38Th St. New York Ny 10018",
+  "head_officer": "Jason Sackoor",
+  "site_manager": "Enis Cecunjanin",
+  "owner_contact": "Jason Sackoor",
   "priority": 6.26
  },
  {
@@ -9554,11 +9562,10 @@
   "lat": 40.7193055,
   "lng": -73.9558695,
   "walk_min": 3.7,
-  "owner_contact": "Szymon Scibek",
-  "site_manager": "Szymon Scibek",
-  "mgmt_company": "Szymonibek Scibek",
-  "contact_name": "Szymonibek Scibek",
+  "mgmt_company": "Szymon Scibek",
+  "contact_name": "Szymon Scibek",
   "mgmt_address": "127 Bedford Avenue Brooklyn Ny 11211",
+  "owner_contact": "Szymon Scibek",
   "priority": 6.26
  },
  {
@@ -9613,12 +9620,12 @@
   "lat": 40.7129749,
   "lng": -73.9601878,
   "walk_min": 8.7,
-  "owner_contact": "Har Shalom Llc",
-  "mgmt_company": "Mordechai Landau",
-  "contact_name": "Mordechai Landau",
-  "mgmt_address": "365 Flushing Brooklyn Ny 11205",
-  "head_officer": "Mordechai Landau",
   "site_manager": "Jack Basch",
+  "owner_contact": "Har Shalom Llc",
+  "head_officer": "Martin Landau",
+  "mgmt_company": "Martin Landau",
+  "contact_name": "Martin Landau",
+  "mgmt_address": "199 Lee Avenue Brooklyn Ny 11211",
   "priority": 6.26
  },
  {
@@ -9953,12 +9960,12 @@
   "lat": 40.7180559,
   "lng": -73.9540919,
   "walk_min": 3.9,
-  "owner_contact": "Stockbridge 60G Driggs 220 Owner Llc",
-  "mgmt_company": "620 Mgmt",
-  "contact_name": "Honghui Lee",
-  "mgmt_address": "6 Greene Street New York Ny 10013",
   "head_officer": "Bastien Broda",
-  "site_manager": "Honghui Lee",
+  "owner_contact": "Stockbridge 60G Driggs Owner Llc",
+  "mgmt_company": "620 Mgmt",
+  "contact_name": "Peter Karellas",
+  "mgmt_address": "54 W 21St Street New York Ny 10010",
+  "site_manager": "Peter Karellas",
   "priority": 6.22
  },
  {
@@ -10105,11 +10112,11 @@
   "lng": -73.9543638,
   "walk_min": 4.0,
   "owner_contact": "247 N 7Th St Llc",
-  "mgmt_company": "Deborah Kasner",
-  "contact_name": "Deborah Kasner",
-  "mgmt_address": "579 Fifth Avenue New York Ny 10017",
   "head_officer": "John Mccarthy",
-  "site_manager": "Deborah Kasner",
+  "site_manager": "Scott Price",
+  "mgmt_company": "Hubb Nyc Property Management",
+  "contact_name": "Scott Price",
+  "mgmt_address": "579 Fifth Avenue New York Ny 10017",
   "priority": 6.2
  },
  {
@@ -10693,7 +10700,7 @@
   "contact_name": "Jason Situ",
   "mgmt_address": "3636 Prince Street Flushing Ny 11354",
   "head_officer": "Shuxin Liang",
-  "site_manager": "Jason Situ",
+  "site_manager": "Jay Zhu",
   "priority": 6.14
  },
  {
@@ -10914,8 +10921,8 @@
   "lat": 40.7149605,
   "lng": -73.9556235,
   "walk_min": 4.4,
-  "owner_contact": "Lucille Florio",
   "site_manager": "Lucille Florio",
+  "owner_contact": "Lucille Florio",
   "priority": 6.12
  },
  {
@@ -11456,11 +11463,11 @@
   "lng": -73.9570523,
   "walk_min": 4.6,
   "owner_contact": "134 North Th Street",
+  "head_officer": "Elli Chung",
   "mgmt_company": "Prorealty Team Llc",
   "contact_name": "David Berk",
   "mgmt_address": "233 Monitor St Brooklyn Ny 11222",
-  "head_officer": "Elli Chung",
-  "site_manager": "Chris Moreno",
+  "site_manager": "Christian Moreno",
   "priority": 6.08
  },
  {
@@ -11480,6 +11487,26 @@
   "contact_name": "Lipa Friedman",
   "mgmt_address": "177 North 11 Street Brooklyn Ny 11211",
   "head_officer": "Lipa Friedman",
+  "priority": 6.06
+ },
+ {
+  "bbl": "3024180026",
+  "address": "744 Driggs Avenue",
+  "units": 4,
+  "year_built": 1910,
+  "year_altered": null,
+  "bldg_class": "C3",
+  "floors": 3.0,
+  "owner": "ARGENIS NARVAEZ, TRUSTEE",
+  "lat": 40.7125991,
+  "lng": -73.9609023,
+  "walk_min": 9.7,
+  "site_manager": "Alon Ashourzadeh",
+  "head_officer": "Alon Ashourzadeh",
+  "mgmt_company": "Alon Ashourzadeh",
+  "contact_name": "Alon Ashourzadeh",
+  "mgmt_address": "6 East 45Th Street New York Ny 10017",
+  "owner_contact": "744 Driggs Llc",
   "priority": 6.06
  },
  {
@@ -11593,10 +11620,10 @@
   "lng": -73.9563254,
   "walk_min": 9.7,
   "owner_contact": "272 South 1St Llc",
+  "head_officer": "Charles Schwartz",
   "mgmt_company": "Charles Schwartz",
   "contact_name": "Charles Schwartz",
-  "mgmt_address": "836 Dekalb Ave Brooklyn Ny 11221",
-  "head_officer": "Charles Schwartz",
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211",
   "priority": 6.06
  },
  {
@@ -11745,11 +11772,11 @@
   "lng": -73.9570324,
   "walk_min": 9.8,
   "owner_contact": "263 South 2Nd Street Hdfc",
-  "mgmt_company": "263 South 2Nd Street Hdfc",
-  "contact_name": "Michael Gordon",
-  "mgmt_address": "434 South 5Th St Brooklyn Ny 11211",
   "head_officer": "Juan Ortega",
-  "site_manager": "Michael Gordon",
+  "site_manager": "Lenette Berrios",
+  "mgmt_company": "263 South 2Nd Street Hdfc",
+  "contact_name": "Lenette Berrios",
+  "mgmt_address": "434 South 5Th St Brooklyn Ny 11211",
   "priority": 6.04
  },
  {
@@ -11842,12 +11869,12 @@
   "lat": 40.7135286,
   "lng": -73.951202,
   "walk_min": 9.9,
-  "head_officer": "Guy Lamarche",
-  "owner_contact": "Lamarche Food Products",
-  "mgmt_company": "Guy Lamarche",
-  "contact_name": "Charles Schwartz",
-  "mgmt_address": "836 Dekalb Avenue Brooklyn Ny 11221",
   "site_manager": "Charles Schwartz",
+  "head_officer": "Charles Schwartz",
+  "mgmt_company": "Charles Schwartz",
+  "contact_name": "Charles Schwartz",
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211",
+  "owner_contact": "438 Union Ave Llc",
   "priority": 6.02
  },
  {
@@ -11933,7 +11960,7 @@
   "contact_name": "Ameet Sachdev",
   "mgmt_address": "52 East 13Th Street New York Ny 10003",
   "head_officer": "Ameet Sachdev",
-  "site_manager": "Wilfredo Quinones",
+  "site_manager": "Kelly Espinal",
   "priority": 6.02
  },
  {
@@ -12048,7 +12075,7 @@
   "contact_name": "Ori Geva",
   "mgmt_address": "252 Java Street Brooklyn Ny 11222",
   "head_officer": "Ori Geva",
-  "site_manager": "Hery Hernandez",
+  "site_manager": "Antonio Delgado",
   "priority": 6.0
  },
  {
@@ -12488,12 +12515,12 @@
   "lat": 40.7190492,
   "lng": -73.9533011,
   "walk_min": 5.6,
+  "site_manager": "Charles Schwartz",
   "owner_contact": "North 11 Suites Llc",
   "mgmt_company": "Bedford Enterprises Llc",
   "contact_name": "Charles Schwartz",
-  "mgmt_address": "836 Dekalb Avenue Brooklyn Ny 11221",
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211",
   "head_officer": "Charles Schwartz",
-  "site_manager": "Charles Schwartz",
   "priority": 5.88
  },
  {
@@ -12577,11 +12604,11 @@
   "lat": 40.7195541,
   "lng": -73.9601226,
   "walk_min": 5.8,
-  "owner_contact": "Janine Kwasnik",
+  "site_manager": "Judy Kocian",
   "mgmt_company": "N/A",
   "contact_name": "Veronica Mikalauskas",
   "mgmt_address": "87 North 7Th Street Brooklyn Ny 11249",
-  "site_manager": "Judy Kocian",
+  "owner_contact": "Janine Kwasnik",
   "priority": 5.84
  },
  {
@@ -13303,7 +13330,7 @@
   "contact_name": "Melissa Verdi",
   "mgmt_address": "568 Union Avenue Brooklyn Ny 11211",
   "head_officer": "Douglas Partrick",
-  "site_manager": "Francisco Then",
+  "site_manager": "Jose Mojica",
   "priority": 5.66
  },
  {
@@ -13432,7 +13459,7 @@
   "contact_name": "Melissa Verdi",
   "mgmt_address": "58 Vanderbilt Motor Parkway Commack Ny 11725",
   "head_officer": "Douglas Partrick",
-  "site_manager": "Francisco Then",
+  "site_manager": "Jose Mojica",
   "priority": 5.62
  },
  {
@@ -13721,8 +13748,8 @@
   "mgmt_company": "Catherine Siedlecki",
   "contact_name": "Catherine Siedlecki",
   "mgmt_address": "229 Berry Street Brooklyn Ny 11249",
-  "head_officer": "Catherine Siedlecki",
   "site_manager": "Catherine Siedlecki",
+  "head_officer": "Catherine Siedlecki",
   "priority": 5.54
  },
  {
@@ -14606,7 +14633,7 @@
   "lng": -73.9589593,
   "walk_min": 3.2,
   "owner_contact": "Teresa Porochnia",
-  "site_manager": "Teresa Porochnia",
+  "site_manager": "Nicholas Porochnia",
   "priority": 5.36
  },
  {
@@ -14757,12 +14784,12 @@
   "lat": 40.7154378,
   "lng": -73.9627187,
   "walk_min": 8.4,
+  "site_manager": "Charles Schwartz",
   "owner_contact": "Berry North Llc",
+  "head_officer": "Charles Schwartz",
   "mgmt_company": "Bedford Enterprises Llc",
   "contact_name": "Charles Schwartz",
-  "mgmt_address": "836 Dekalb Ave Brooklyn Ny 11221",
-  "head_officer": "Charles Schwartz",
-  "site_manager": "Charles Schwartz",
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211",
   "priority": 5.32
  },
  {
@@ -14940,11 +14967,11 @@
   "lng": -73.9563755,
   "walk_min": 8.6,
   "owner_contact": "Gold 336 Grand Llc",
-  "head_officer": "Moses Guttman",
   "site_manager": "Gabriel Dorfman",
   "mgmt_company": "Nbm Management Llc",
   "contact_name": "Gabriel Dorfman",
   "mgmt_address": "329 Hewes St Brooklyn Ny 11211",
+  "head_officer": "Moses Guttman",
   "priority": 5.28
  },
  {
@@ -15015,8 +15042,8 @@
   "mgmt_company": "Santino Ploumitsakos",
   "contact_name": "Santino Ploumitsakos",
   "mgmt_address": "79-63 68 Rd Flushing Ny 11379",
-  "head_officer": "Victor Celli",
   "site_manager": "Santino Ploumitsakos",
+  "head_officer": "Kathryn Celli",
   "priority": 5.26
  },
  {
@@ -15191,8 +15218,8 @@
   "mgmt_company": "Livingston Management Services",
   "contact_name": "Rony Kravel",
   "mgmt_address": "225 West 35Th Street New York Ny 10001",
-  "head_officer": "Robert Li",
   "site_manager": "Gladstone Daley",
+  "head_officer": "Robert Li",
   "priority": 5.2
  },
  {
@@ -15241,6 +15268,26 @@
   "site_manager": "Gabriel Dorfman",
   "head_officer": "Alan Messner",
   "owner_contact": "Marcy Grand Llc",
+  "priority": 5.18
+ },
+ {
+  "bbl": "3023797503",
+  "address": "103 Grand Street",
+  "units": 9,
+  "year_built": 1910,
+  "year_altered": 2023,
+  "bldg_class": "R6",
+  "floors": 5.0,
+  "owner": "73 GOLD STREET LLC",
+  "lat": 40.7155698,
+  "lng": -73.9633751,
+  "walk_min": 9.1,
+  "head_officer": "Anthony Musto",
+  "mgmt_company": "Crosstown Management Corp.",
+  "contact_name": "Anthony Musto",
+  "mgmt_address": "97-77 Queens Blvd Rego Park Ny 11374",
+  "owner_contact": "The 103 Grand Street Condominium",
+  "site_manager": "David Solomon",
   "priority": 5.18
  },
  {
@@ -15294,11 +15341,11 @@
   "lat": 40.7159267,
   "lng": -73.9635842,
   "walk_min": 9.2,
-  "owner_contact": "North 1St Apartments Llc",
   "mgmt_company": "Charles Schwartz",
   "contact_name": "Charles Schwartz",
-  "mgmt_address": "836 Dekalb Ave Brooklyn Ny 11221",
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211",
   "head_officer": "Charles Schwartz",
+  "owner_contact": "North 1St Apartments Llc",
   "priority": 5.16
  },
  {
@@ -15333,8 +15380,8 @@
   "lat": 40.7144288,
   "lng": -73.9509488,
   "walk_min": 9.3,
-  "owner_contact": "Marian Okuniewski",
   "site_manager": "Marian Okuniewski",
+  "owner_contact": "Marian Okuniewski",
   "priority": 5.14
  },
  {
@@ -15468,6 +15515,25 @@
   "priority": 5.1
  },
  {
+  "bbl": "3024060001",
+  "address": "309 Bedford Avenue",
+  "units": 4,
+  "year_built": 1910,
+  "year_altered": null,
+  "bldg_class": "S4",
+  "floors": 3.0,
+  "owner": "SANTOS , JUAN  C",
+  "lat": 40.7133158,
+  "lng": -73.9618036,
+  "walk_min": 9.5,
+  "owner_contact": "Juan Santos",
+  "site_manager": "Juan Santos",
+  "mgmt_company": "Juan Santos",
+  "contact_name": "Juan Santos",
+  "mgmt_address": "309 Bedford Ave Brooklyn Ny 11211",
+  "priority": 5.1
+ },
+ {
   "bbl": "3023040004",
   "address": "73 Berry Street",
   "units": 3,
@@ -15588,22 +15654,6 @@
   "contact_name": "Jacob Brach",
   "mgmt_address": "65 South 11 St Brooklyn Ny 11249",
   "head_officer": "Isidore Heimann",
-  "priority": 5.06
- },
- {
-  "bbl": "3024180026",
-  "address": "744 Driggs Avenue",
-  "units": 4,
-  "year_built": 1910,
-  "year_altered": null,
-  "bldg_class": "C3",
-  "floors": 3.0,
-  "owner": "ARGENIS NARVAEZ, TRUSTEE",
-  "lat": 40.7125991,
-  "lng": -73.9609023,
-  "walk_min": 9.7,
-  "owner_contact": "Aida Narvaez",
-  "site_manager": "Jose Narvaez",
   "priority": 5.06
  },
  {
@@ -15925,12 +15975,12 @@
   "lat": 40.7204751,
   "lng": -73.9566552,
   "walk_min": 5.5,
+  "mgmt_company": "Solstice Residential Group, Llc",
+  "contact_name": "Faith Campbell",
+  "mgmt_address": "120 Broadway New York Ny 10271",
+  "site_manager": "Faith Campbell",
   "owner_contact": "55 Berry Street Condominium",
-  "mgmt_company": "Daisy Management",
-  "contact_name": "Chris Swensen",
-  "mgmt_address": "385 5Th Ave New York Ny 10016",
-  "head_officer": "Chris Swensen",
-  "site_manager": "Chris Swensen",
+  "head_officer": "Arefa Mohamed",
   "priority": 4.9
  },
  {
@@ -15995,11 +16045,11 @@
   "lng": -73.9568157,
   "walk_min": 0.6,
   "owner_contact": "177 N 7Th Llc",
-  "mgmt_company": "Sterling Equities Property Management",
-  "contact_name": "Tarrin Wynter",
-  "mgmt_address": "150 Greenwich Street New York Ny 10007",
   "head_officer": "Gregory Katz",
   "site_manager": "Dwayne Townsend",
+  "mgmt_company": "Sterling Equities Property Management",
+  "contact_name": "Tarrin Wynter",
+  "mgmt_address": "80 Meserole Street Brooklyn Ny 11206",
   "priority": 4.88
  },
  {
@@ -16380,12 +16430,12 @@
   "lat": 40.7137689,
   "lng": -73.9548559,
   "walk_min": 6.7,
-  "owner_contact": "416 Metropolitan Ave Owner Llc",
   "mgmt_company": "Judith Drive Llc",
   "contact_name": "David Cohen",
   "mgmt_address": "41 Flatbush Avenue Brooklyn Ny 11217",
+  "site_manager": "Amiel Schertz",
   "head_officer": "Jay Greenberg",
-  "site_manager": "Idriz Rugova",
+  "owner_contact": "416 Metropolitan Ave Owner Llc",
   "priority": 4.66
  },
  {
@@ -16845,7 +16895,7 @@
   "contact_name": "Rony Kravel",
   "mgmt_address": "225 West 35Th Street New York Ny 10001",
   "head_officer": "Rony Kravel",
-  "site_manager": "Stone Daley",
+  "site_manager": "Gladstone Daley",
   "priority": 4.44
  },
  {
@@ -17041,8 +17091,8 @@
   "mgmt_company": "Quantum Property Management",
   "contact_name": "Joseph Kanner",
   "mgmt_address": "11-11 44Th Drive Long Island Cit Ny 11101",
-  "head_officer": "Ravi Sachidanadam",
   "site_manager": "Joseph Kanner",
+  "head_officer": "William Hou",
   "priority": 4.34
  },
  {
@@ -17074,11 +17124,11 @@
   "lng": -73.9617851,
   "walk_min": 8.4,
   "owner_contact": "South Ninth & Bedford Lp",
-  "mgmt_company": "Los Sures Management",
-  "contact_name": "Michael Gordon",
-  "mgmt_address": "434 South 5Th St Brooklyn Ny 11211",
   "head_officer": "Juan Ramos",
-  "site_manager": "Michael Gordon",
+  "mgmt_company": "Los Sures Management",
+  "contact_name": "Lenette Berrios",
+  "mgmt_address": "434 South 5Th St Brooklyn Ny 11211",
+  "site_manager": "Lenette Berrios",
   "priority": 4.32
  },
  {
@@ -17312,12 +17362,12 @@
   "lat": 40.7196162,
   "lng": -73.9571752,
   "walk_min": 4.0,
-  "owner_contact": "Belvedere Xxvi Condominium Corporation",
+  "site_manager": "Frankie Grima",
+  "head_officer": "Diane Roman",
   "mgmt_company": "Leiter Property Management",
   "contact_name": "Diane Roman",
-  "mgmt_address": "750 Grand Street Brooklyn Ny 11211",
-  "head_officer": "Diane Roman",
-  "site_manager": "Frankie Grima",
+  "mgmt_address": "300 Cadman Plaza West Brooklyn Ny 11201",
+  "owner_contact": "Belvedere Xxvi Condominium Corporation",
   "priority": 4.2
  },
  {
@@ -17354,20 +17404,6 @@
   "mgmt_address": "157 East 25 Street New York Ny 10010",
   "head_officer": "William Ingraham",
   "site_manager": "David Laureano",
-  "priority": 4.18
- },
- {
-  "bbl": "3023797503",
-  "address": "103 Grand Street",
-  "units": 9,
-  "year_built": 1910,
-  "year_altered": 2023,
-  "bldg_class": "R6",
-  "floors": 5.0,
-  "owner": "73 GOLD STREET LLC",
-  "lat": 40.7155698,
-  "lng": -73.9633751,
-  "walk_min": 9.1,
   "priority": 4.18
  },
  {
@@ -17519,22 +17555,6 @@
   "priority": 4.12
  },
  {
-  "bbl": "3024060001",
-  "address": "309 Bedford Avenue",
-  "units": 4,
-  "year_built": 1910,
-  "year_altered": null,
-  "bldg_class": "S4",
-  "floors": 3.0,
-  "owner": "SANTOS , JUAN  C",
-  "lat": 40.7133158,
-  "lng": -73.9618036,
-  "walk_min": 9.5,
-  "owner_contact": "Juan Santos",
-  "site_manager": "Juan Santos",
-  "priority": 4.1
- },
- {
   "bbl": "3023740001",
   "address": "123 Hope Street",
   "units": 136,
@@ -17547,11 +17567,11 @@
   "lng": -73.9533418,
   "walk_min": 9.5,
   "owner_contact": "123 Hope St Llc",
-  "mgmt_company": "Hubb Nyc Property Management",
-  "contact_name": "Deborah Kasner",
-  "mgmt_address": "579 579 5Th Avenue New York Ny 10017",
   "head_officer": "John Mccarthy",
-  "site_manager": "Deborah Kasner",
+  "site_manager": "Scott Price",
+  "mgmt_company": "Hubb Nyc Property Management",
+  "contact_name": "Scott Price",
+  "mgmt_address": "579 579 5Th Avenue New York Ny 10017",
   "priority": 4.1
  },
  {
@@ -17840,11 +17860,11 @@
   "lng": -73.9604086,
   "walk_min": 4.8,
   "owner_contact": "101 North 5Th Street Condominium",
+  "site_manager": "Frankie Grima",
   "mgmt_company": "Leiter Property Management",
   "contact_name": "Diane Roman",
-  "mgmt_address": "750 Grand Street Brooklyn Ny 11211",
+  "mgmt_address": "300 Cadman Plaza West Brooklyn Ny 11201",
   "head_officer": "Diane Roman",
-  "site_manager": "Gail Davis",
   "priority": 4.04
  },
  {
@@ -17895,12 +17915,12 @@
   "lat": 40.7142639,
   "lng": -73.9504692,
   "walk_min": 9.9,
-  "owner_contact": "555 Metropolitan Ave Llc",
-  "mgmt_company": "Joseph Malench",
-  "contact_name": "Joseph Malench",
-  "mgmt_address": "37 Withers Street Brooklyn Ny 11211",
-  "head_officer": "Joseph Malench",
-  "site_manager": "Maria Piazzi",
+  "head_officer": "Matthew Malench",
+  "owner_contact": "555 Metropolitan Avenue Llc",
+  "site_manager": "Matthew Malench",
+  "mgmt_company": "Matthew Malench",
+  "contact_name": "Matthew Malench",
+  "mgmt_address": "37 Withers St Brooklyn Ny 11211",
   "priority": 4.02
  },
  {
@@ -18035,10 +18055,10 @@
   "walk_min": 5.3,
   "owner_contact": "90 North 5Th St Condominium Association Inc",
   "site_manager": "Anes Radoncic",
-  "head_officer": "Dana Gal",
   "mgmt_company": "Venture Ny Property Management Llc.",
   "contact_name": "Anes Radoncic",
   "mgmt_address": "43-10 11Th Street Long Island Cit Ny 11101",
+  "head_officer": "Dana Gal",
   "priority": 3.94
  },
  {
@@ -18057,8 +18077,8 @@
   "mgmt_company": "Livingston Management Services Llc",
   "contact_name": "Rony Kravel",
   "mgmt_address": "225 West 35Th Street New York Ny 10001",
-  "head_officer": "Robert Li",
   "site_manager": "Gladstone Daley",
+  "head_officer": "Robert Li",
   "priority": 3.92
  },
  {
@@ -18094,11 +18114,11 @@
   "lng": -73.9582499,
   "walk_min": 5.4,
   "owner_contact": "The 280 Metropolitan Avenue Condominium",
-  "mgmt_company": "Argo Real Estate, Llc",
-  "contact_name": "John Hansen",
-  "mgmt_address": "50 West 17Th Street New York Ny 10011",
   "head_officer": "Jeffery Bieber",
-  "site_manager": "Guilermo Scoffi",
+  "site_manager": "Nelson Hernandez",
+  "mgmt_company": "Argo Real Estate, Llc",
+  "contact_name": "Darren Johnson",
+  "mgmt_address": "50 West 17Th Street New York Ny 10011",
   "priority": 3.92
  },
  {
@@ -18174,11 +18194,11 @@
   "lng": -73.9534742,
   "walk_min": 5.5,
   "owner_contact": "201 N 11Th Street Condominium",
-  "mgmt_company": "Livingston Management Services",
+  "site_manager": "Miguel Martinez",
+  "mgmt_company": "Livingston Management Services, Llc",
   "contact_name": "Rony Kravel",
   "mgmt_address": "225 West 35Th Street New York Ny 10001",
   "head_officer": "David Handler",
-  "site_manager": "Miguel Martinez",
   "priority": 3.9
  },
  {
@@ -18209,12 +18229,12 @@
   "lat": 40.714669,
   "lng": -73.9544297,
   "walk_min": 5.6,
-  "owner_contact": "Sixth & Meyer Condominium",
+  "site_manager": "Sandra Castellano",
   "mgmt_company": "Leiter Property Management",
   "contact_name": "Diane Roman",
-  "mgmt_address": "750 Grand Brooklyn Ny 11211",
+  "mgmt_address": "276 North 6Th Brooklyn Ny 11215",
+  "owner_contact": "Sixth & Meyer Condominium",
   "head_officer": "Diane Roman",
-  "site_manager": "Sandra Castellano",
   "priority": 3.88
  },
  {
@@ -18482,12 +18502,12 @@
   "lat": 40.7133662,
   "lng": -73.9567211,
   "walk_min": 6.8,
+  "site_manager": "Frankie Grima",
   "owner_contact": "Williamsburg Mews Condominium",
+  "head_officer": "Diane Roman",
   "mgmt_company": "Leiter Property Management",
   "contact_name": "Diane Roman",
-  "mgmt_address": "750 Grand Street Brooklyn Ny 11211",
-  "head_officer": "Diane Roman",
-  "site_manager": "Frankie Grima",
+  "mgmt_address": "300 Cadman Plaza West Brooklyn Ny 11201",
   "priority": 3.64
  },
  {
@@ -18542,12 +18562,12 @@
   "lat": 40.7165481,
   "lng": -73.951712,
   "walk_min": 6.9,
-  "owner_contact": "538 Union Avenue Condominium",
+  "site_manager": "Benjamin Flores",
+  "head_officer": "Diane Roman",
   "mgmt_company": "Leiter Property Management",
   "contact_name": "Diane Roman",
-  "mgmt_address": "750 Grand Street Brooklyn Ny 11211",
-  "head_officer": "Diane Roman",
-  "site_manager": "Benjamin Flores",
+  "mgmt_address": "300 Cadman Plaza West Brooklyn Ny 11201",
+  "owner_contact": "538 Union Avenue Condominium",
   "priority": 3.62
  },
  {
@@ -18562,12 +18582,12 @@
   "lat": 40.7165602,
   "lng": -73.9620723,
   "walk_min": 7.0,
-  "owner_contact": "100 N 3 Corp",
   "mgmt_company": "Venture Ny Property Management, Llc",
   "contact_name": "Armin Radoncic",
   "mgmt_address": "43-10 11Th Street Long Island Cit Ny 11101",
-  "head_officer": "Gregory Gallo",
   "site_manager": "Armin Radoncic",
+  "head_officer": "Evan Bennett",
+  "owner_contact": "100 N 3 Street Condominium",
   "priority": 3.6
  },
  {
@@ -18770,12 +18790,12 @@
   "lat": 40.7132381,
   "lng": -73.9593761,
   "walk_min": 7.8,
+  "site_manager": "Charles Schwartz",
   "owner_contact": "South 1 Holdings Llc",
+  "head_officer": "Charles Schwartz",
   "mgmt_company": "South 1 Holdings Llc",
   "contact_name": "Charles Schwartz",
-  "mgmt_address": "836 Dekalb Ave Brooklyn Ny 11221",
-  "head_officer": "Charles Schwartz",
-  "site_manager": "Charles Schwartz",
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211",
   "priority": 3.44
  },
  {
@@ -18790,12 +18810,12 @@
   "lat": 40.7132024,
   "lng": -73.9592715,
   "walk_min": 7.8,
-  "owner_contact": "South First Park Llc",
+  "site_manager": "Charles Schwartz",
+  "head_officer": "Charles Schwartz",
   "mgmt_company": "South First Park Llc",
   "contact_name": "Charles Schwartz",
-  "mgmt_address": "836 Dekalb Ave Brooklyn Ny 11221",
-  "head_officer": "Charles Schwartz",
-  "site_manager": "Charles Schwartz",
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211",
+  "owner_contact": "South First Park Llc",
   "priority": 3.44
  },
  {
@@ -18830,7 +18850,7 @@
   "lat": 40.7185735,
   "lng": -73.9582437,
   "walk_min": 2.9,
-  "owner_contact": "Adam Majkut",
+  "owner_contact": "The North 8 Street Condominium",
   "mgmt_company": "Solstice Residential Group, Llc",
   "contact_name": "Veronica Loftus",
   "mgmt_address": "120 Broadway New York Ny 10271",
@@ -18929,12 +18949,12 @@
   "lat": 40.7160829,
   "lng": -73.9627652,
   "walk_min": 8.0,
-  "owner_contact": "Metro Nort 2 Llc",
   "head_officer": "Marek Kaczor",
   "mgmt_company": "Marek Kaczor",
   "contact_name": "Marek Kaczor",
   "mgmt_address": "132 Metropolitan Ave Brooklyn Ny 11249",
   "site_manager": "Marek Kaczor",
+  "owner_contact": "Metro Nort 2 Llc",
   "priority": 3.4
  },
  {
@@ -18969,11 +18989,11 @@
   "lat": 40.7130215,
   "lng": -73.9598199,
   "walk_min": 8.4,
+  "owner_contact": "190 South 1St Condominium",
   "mgmt_company": "Rem Residential",
   "contact_name": "Albina Piroli",
   "mgmt_address": "8 West 36Th Street New York Ny 10018",
-  "head_officer": "Omri Sachs",
-  "owner_contact": "190 South 1St Street Condominium",
+  "head_officer": "Andrew Rodgers",
   "site_manager": "Carlos Rodriguez",
   "priority": 3.32
  },
@@ -19043,12 +19063,12 @@
   "lat": 40.7126506,
   "lng": -73.958976,
   "walk_min": 8.5,
+  "site_manager": "Sandra Castellano",
   "owner_contact": "198 Roebling Condominium Association",
+  "head_officer": "Diane Roman",
   "mgmt_company": "Leiter Property Management",
   "contact_name": "Diane Roman",
-  "mgmt_address": "750 Grand Brooklyn Ny 11211",
-  "head_officer": "Diane Roman",
-  "site_manager": "Sandra Castellano",
+  "mgmt_address": "300 Cadman Plaza West Brooklyn Ny 11201",
   "priority": 3.3
  },
  {
@@ -19063,11 +19083,12 @@
   "lat": 40.7156657,
   "lng": -73.9629242,
   "walk_min": 8.5,
-  "mgmt_company": "Division Property Management",
+  "owner_contact": "The 110 North 1St Street Condominium",
+  "head_officer": "Peter Stratigakis",
+  "site_manager": "Constantinos Stratigakis",
+  "mgmt_company": "Division Property Management Ltd",
   "contact_name": "Peter Stratigakis",
   "mgmt_address": "110 York Street Brooklyn Ny 11201",
-  "owner_contact": "The 110 North 1St Street Condominium",
-  "head_officer": "Harel Edrey",
   "priority": 3.3
  },
  {
@@ -19160,11 +19181,11 @@
   "lat": 40.7142793,
   "lng": -73.9621422,
   "walk_min": 8.7,
-  "owner_contact": "133 South 1St Condo Association",
   "mgmt_company": "Leiter Property Management",
   "contact_name": "Diane Roman",
-  "mgmt_address": "750 Grand Street Brooklyn Ny 11211",
+  "mgmt_address": "300 Cadman Plaza W. Brooklyn Ny 11201",
   "site_manager": "Frankie Grima",
+  "owner_contact": "133 South 1St Condo Association",
   "head_officer": "Diane Roman",
   "priority": 3.26
  },
@@ -19671,10 +19692,11 @@
   "lng": -73.9564569,
   "walk_min": 5.1,
   "owner_contact": "125 North 10Th Street Condo",
-  "mgmt_company": "Akam Assocates, Inc",
-  "contact_name": "Steven Okine",
-  "mgmt_address": "99 Park Avenue New York Ny 10016",
-  "head_officer": "Steven Okine",
+  "head_officer": "Miralem Halilovic",
+  "mgmt_company": "Solstice Residential Group, Llc",
+  "contact_name": "Miralem Halilovic",
+  "mgmt_address": "120 Broadway New York Ny 10271",
+  "site_manager": "Giuseppe Allegretti",
   "priority": 2.98
  },
  {
@@ -19798,11 +19820,11 @@
   "lng": -73.9598839,
   "walk_min": 6.2,
   "owner_contact": "171 North 1St Street",
+  "site_manager": "Jenelle Lenis",
+  "head_officer": "Christopher Alker",
   "mgmt_company": "Akam Associates, Inc.",
   "contact_name": "Jenelle Lenis",
   "mgmt_address": "99 Park Avenue New York Ny 10016",
-  "head_officer": "Jenelle Lenis",
-  "site_manager": "Besard Shiqerakuj",
   "priority": 2.76
  },
  {
@@ -19818,11 +19840,11 @@
   "lng": -73.9555294,
   "walk_min": 6.3,
   "owner_contact": "The Residences At The Williamsburg",
-  "mgmt_company": "Choice Ny Management",
-  "contact_name": "Michael Feldman",
-  "mgmt_address": "254 West 31St Street New York Ny 10001",
   "head_officer": "Mary Mendez",
   "site_manager": "Ibrahim Dema",
+  "mgmt_company": "Choice Ny Management",
+  "contact_name": "Adam Lichtenstein",
+  "mgmt_address": "254 West 31St Street New York Ny 10001",
   "priority": 2.74
  },
  {
@@ -19838,11 +19860,11 @@
   "lng": -73.953351,
   "walk_min": 6.3,
   "owner_contact": "308 North 7Th Street",
-  "mgmt_company": "Choice New York Management",
-  "contact_name": "Michael Feldman",
-  "mgmt_address": "254 West 31St Street New York Ny 10001",
   "head_officer": "Ron Valesh",
   "site_manager": "Ibrahim Dema",
+  "mgmt_company": "Choice New York Management",
+  "contact_name": "Adam Lichtenstein",
+  "mgmt_address": "254 West 31St Street New York Ny 10001",
   "priority": 2.74
  },
  {
@@ -19877,12 +19899,12 @@
   "lat": 40.713938,
   "lng": -73.9592494,
   "walk_min": 6.6,
-  "owner_contact": "227 Grand Jfl Holdings Llc",
-  "mgmt_company": "Yida Stern",
-  "contact_name": "Yida Stern",
-  "mgmt_address": "261 Lenox Road Office Brooklyn Ny 11226",
-  "head_officer": "Yida Stern",
-  "site_manager": "Yida Stern",
+  "head_officer": "Michael Shah",
+  "owner_contact": "Ds 227 Grand Llc",
+  "mgmt_company": "Ds 227 Grand Llc",
+  "contact_name": "Nicholas Yu",
+  "mgmt_address": "687 Driggs Avenue Brooklyn Ny 11211",
+  "site_manager": "Blake Abreu",
   "priority": 2.68
  },
  {
@@ -19938,10 +19960,11 @@
   "lng": -73.9516761,
   "walk_min": 7.0,
   "owner_contact": "The North Condominium",
-  "mgmt_company": "Akam Associates, Inc",
+  "head_officer": "Christopher Alker",
+  "site_manager": "Jenelle Lenis",
+  "mgmt_company": "Akam Associates, Inc.",
   "contact_name": "Jenelle Lenis",
   "mgmt_address": "99 Park Avenue New York Ny 10016",
-  "head_officer": "Jenelle Lenis",
   "priority": 2.6
  },
  {
@@ -19957,11 +19980,11 @@
   "lng": -73.9515481,
   "walk_min": 7.4,
   "owner_contact": "The Bayard Views Condominium",
-  "mgmt_company": "Solstice Residential Group",
-  "contact_name": "Veronica Loftus",
-  "mgmt_address": "120 Broadway New York Ny 10271",
   "head_officer": "Brian Carr",
   "site_manager": "Edmond Xhebexhia",
+  "mgmt_company": "Solstice Residential Group",
+  "contact_name": "Ashley Gathright",
+  "mgmt_address": "120 Broadway New York Ny 10271",
   "priority": 2.52
  },
  {
@@ -19995,12 +20018,12 @@
   "lat": 40.7166811,
   "lng": -73.962516,
   "walk_min": 7.5,
-  "owner_contact": "125 Metropolitan Owner Llc",
   "mgmt_company": "Lisa Management",
   "contact_name": "Justin Alibayof",
   "mgmt_address": "494 8Th Avenue New York Ny 10001",
   "head_officer": "David Kramer",
-  "site_manager": "Justin Alibayof",
+  "site_manager": "Alfons Dibrani",
+  "owner_contact": "125 Metropolitan Owner Llc",
   "priority": 2.5
  },
  {
@@ -20162,7 +20185,7 @@
   "contact_name": "Ron Luft",
   "mgmt_address": "42-06 235 St Douglaston Ny 11363",
   "head_officer": "Jeffrey Levine",
-  "site_manager": "Julio Carrero",
+  "site_manager": "Elaine Dejesus",
   "priority": 2.24
  },
  {
@@ -20272,12 +20295,12 @@
   "lat": 40.7189838,
   "lng": -73.9620854,
   "walk_min": 7.5,
-  "owner_contact": "Kent & Wythe Owners Llc",
   "mgmt_company": "C&C Apartment Management",
-  "contact_name": "Charles Vetter",
-  "mgmt_address": "1735 Park Avenue New York Ny 10035",
+  "contact_name": "Anthony Fernandez",
+  "mgmt_address": "2 Park Avenue New York Ny 10016",
+  "site_manager": "Anthony Fernandez",
+  "owner_contact": "Kent & Wythe Owners Llc",
   "head_officer": "Herminio Torres",
-  "site_manager": "Charles Vetter",
   "priority": 1.5
  },
  {
@@ -20327,7 +20350,7 @@
   "contact_name": "Ron Luft",
   "mgmt_address": "42-06 235 St Douglaston Ny 11363",
   "head_officer": "Jeffey Levine",
-  "site_manager": "Julio Carrero",
+  "site_manager": "Elaine Dejesus",
   "priority": 1.18
  },
  {
@@ -20343,11 +20366,11 @@
   "lng": -73.9626509,
   "walk_min": 9.4,
   "owner_contact": "Edge 11211 Condominium",
+  "site_manager": "Aleksandra Barbul",
+  "head_officer": "Christopher Alker",
   "mgmt_company": "Akam Associates, Inc.",
   "contact_name": "Aleksandra Barbul",
   "mgmt_address": "99 Park Avenue New York Ny 10016",
-  "head_officer": "Aleksandra Barbul",
-  "site_manager": "Aleksandra Barbul",
   "priority": 1.12
  },
  {
@@ -20383,11 +20406,11 @@
   "lng": -73.963535,
   "walk_min": 10.0,
   "owner_contact": "Edge 11211 Condominium",
+  "site_manager": "Aleksandra Barbul",
   "mgmt_company": "Akam Associates, Inc.",
   "contact_name": "Aleksandra Barbul",
   "mgmt_address": "99 Park Avenue New York Ny 10016",
-  "head_officer": "Aleksandra Barbul",
-  "site_manager": "Aleksandra Barbul",
+  "head_officer": "Christopher Alker",
   "priority": 1.0
  },
  {

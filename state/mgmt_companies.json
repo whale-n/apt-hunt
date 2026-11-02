@@ -1,9 +1,10 @@
 [
  {
-  "buildings": 3,
-  "units": 621,
+  "buildings": 4,
+  "units": 665,
   "addresses": [
    "171 North First Street",
+   "526 Union Avenue",
    "34 North 7 Street",
    "22 North 6 Street"
   ],
@@ -38,7 +39,7 @@
    "149 Kent Avenue"
   ],
   "name": "C&C Apartment Management",
-  "mgmt_address": "1735 Park Avenue New York Ny 10035"
+  "mgmt_address": "2 Park Avenue New York Ny 10016"
  },
  {
   "buildings": 2,
@@ -87,21 +88,6 @@
   "mgmt_address": "8 West 36Th Street New York Ny 10018"
  },
  {
-  "buildings": 7,
-  "units": 250,
-  "addresses": [
-   "72 Berry Street",
-   "55 Berry Street",
-   "218 North 8 Street",
-   "69 Berry Street",
-   "70 Berry Street",
-   "661 Driggs Avenue",
-   "214 North 11 Street"
-  ],
-  "name": "Daisy Management",
-  "mgmt_address": "385 5Th Ave New York Ny 10016"
- },
- {
   "buildings": 1,
   "units": 234,
   "addresses": [
@@ -132,6 +118,18 @@
   "mgmt_address": "735 Bedford Ave Brooklyn Ny 11205"
  },
  {
+  "buildings": 4,
+  "units": 219,
+  "addresses": [
+   "55 Berry Street",
+   "50 Bayard Street",
+   "144 North 8 Street",
+   "125 North 10 Street"
+  ],
+  "name": "Solstice Residential Group, Llc",
+  "mgmt_address": "120 Broadway New York Ny 10271"
+ },
+ {
   "buildings": 3,
   "units": 211,
   "addresses": [
@@ -140,7 +138,31 @@
    "208 North 10 Street"
   ],
   "name": "620 Mgmt",
-  "mgmt_address": "6 Greene Street New York Ny 10013"
+  "mgmt_address": "54 W 21St Street New York Ny 10010"
+ },
+ {
+  "buildings": 6,
+  "units": 205,
+  "addresses": [
+   "72 Berry Street",
+   "218 North 8 Street",
+   "69 Berry Street",
+   "70 Berry Street",
+   "661 Driggs Avenue",
+   "214 North 11 Street"
+  ],
+  "name": "Daisy Management",
+  "mgmt_address": "385 5Th Ave New York Ny 10016"
+ },
+ {
+  "buildings": 2,
+  "units": 201,
+  "addresses": [
+   "255 North 7 Street",
+   "123 Hope Street"
+  ],
+  "name": "Hubb Nyc Property Management",
+  "mgmt_address": "579 579 5Th Avenue New York Ny 10017"
  },
  {
   "buildings": 7,
@@ -203,6 +225,25 @@
   "mgmt_address": "33-01 Vernon Boulevard Long Island Cit Ny 11106"
  },
  {
+  "buildings": 11,
+  "units": 147,
+  "addresses": [
+   "20 Havemeyer Street",
+   "41 Skillman Avenue",
+   "99 North 4 Street",
+   "5 Withers Street",
+   "295 North 7 Street",
+   "22 Frost Street",
+   "28 Richardson Street",
+   "30 Richardson Street",
+   "272 South 1 Street",
+   "438 Union Avenue",
+   "88 North 1 Street"
+  ],
+  "name": "Charles Schwartz",
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211"
+ },
+ {
   "buildings": 4,
   "units": 147,
   "addresses": [
@@ -222,15 +263,6 @@
   ],
   "name": "Lcor Asset Management Limited",
   "mgmt_address": "1 Penn Plaza New York Ny 10119"
- },
- {
-  "buildings": 1,
-  "units": 136,
-  "addresses": [
-   "123 Hope Street"
-  ],
-  "name": "Hubb Nyc Property Management",
-  "mgmt_address": "579 579 5Th Avenue New York Ny 10017"
  },
  {
   "buildings": 5,
@@ -280,22 +312,6 @@
   "mgmt_address": "254 West 31St Street New York Ny 10001"
  },
  {
-  "buildings": 8,
-  "units": 121,
-  "addresses": [
-   "20 Havemeyer Street",
-   "41 Skillman Avenue",
-   "5 Withers Street",
-   "295 North 7 Street",
-   "22 Frost Street",
-   "28 Richardson Street",
-   "272 South 1 Street",
-   "88 North 1 Street"
-  ],
-  "name": "Charles Schwartz",
-  "mgmt_address": "836 Dekalb Ave Brooklyn Ny 11221"
- },
- {
   "buildings": 1,
   "units": 121,
   "addresses": [
@@ -318,7 +334,7 @@
    "133 South 1 Street"
   ],
   "name": "Leiter Property Management",
-  "mgmt_address": "750 Grand Street Brooklyn Ny 11211"
+  "mgmt_address": "300 Cadman Plaza W. Brooklyn Ny 11201"
  },
  {
   "buildings": 1,
@@ -366,7 +382,7 @@
    "228 Berry Street"
   ],
   "name": "Bedford Enterprises Llc",
-  "mgmt_address": "836 Dekalb Ave Brooklyn Ny 11221"
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211"
  },
  {
   "buildings": 2,
@@ -426,16 +442,6 @@
   "mgmt_address": "58 Vanderbilt Motor Parkway Commack Ny 11725"
  },
  {
-  "buildings": 2,
-  "units": 89,
-  "addresses": [
-   "50 Bayard Street",
-   "144 North 8 Street"
-  ],
-  "name": "Solstice Residential Group, Llc",
-  "mgmt_address": "120 Broadway New York Ny 10271"
- },
- {
   "buildings": 3,
   "units": 88,
   "addresses": [
@@ -445,15 +451,6 @@
   ],
   "name": "Canvas Property Group",
   "mgmt_address": "215 Lexington Avenue New York Ny 10016"
- },
- {
-  "buildings": 1,
-  "units": 85,
-  "addresses": [
-   "125 North 10 Street"
-  ],
-  "name": "Akam Assocates, Inc",
-  "mgmt_address": "99 Park Avenue New York Ny 10016"
  },
  {
   "buildings": 1,
@@ -474,17 +471,14 @@
   "mgmt_address": "230 West 41S Street New York Ny 10036"
  },
  {
-  "buildings": 5,
-  "units": 77,
+  "buildings": 2,
+  "units": 75,
   "addresses": [
-   "232 Metropolitan Avenue",
-   "60 North 8 Street",
-   "209 South 2 Street",
-   "188 South 2 Street",
-   "300 Bedford Avenue"
+   "31 Metropolitan Avenue",
+   "500 Metropolitan Avenue"
   ],
-  "name": "Los Sures Management",
-  "mgmt_address": "434 South 5Th St Brooklyn Ny 11211"
+  "name": "Nyc Management",
+  "mgmt_address": "13 West 38Th St. New York Ny 10018"
  },
  {
   "buildings": 1,
@@ -494,6 +488,17 @@
   ],
   "name": "Lisa Management",
   "mgmt_address": "494 8Th Avenue New York Ny 10001"
+ },
+ {
+  "buildings": 3,
+  "units": 71,
+  "addresses": [
+   "258 Grand Street",
+   "188 South 2 Street",
+   "184 South 2 Street"
+  ],
+  "name": "Los Sures Management Co.",
+  "mgmt_address": "434 So. 5Th Street Brooklyn Ny 11211"
  },
  {
   "buildings": 2,
@@ -507,41 +512,12 @@
  },
  {
   "buildings": 1,
-  "units": 65,
-  "addresses": [
-   "255 North 7 Street"
-  ],
-  "name": "Deborah Kasner",
-  "mgmt_address": "579 Fifth Avenue New York Ny 10017"
- },
- {
-  "buildings": 3,
-  "units": 63,
-  "addresses": [
-   "69 North 6 Street",
-   "224 Wythe Avenue",
-   "31 Metropolitan Avenue"
-  ],
-  "name": "Plaza Management Usa",
-  "mgmt_address": "50 Rutledge Street Brooklyn Ny 11249"
- },
- {
-  "buildings": 1,
   "units": 62,
   "addresses": [
    "117 Kent Avenue"
   ],
   "name": "Pinnacle City Living Llc",
   "mgmt_address": "1201 Broadway New York Ny 10001"
- },
- {
-  "buildings": 1,
-  "units": 60,
-  "addresses": [
-   "500 Metropolitan Avenue"
-  ],
-  "name": "Nyc Management",
-  "mgmt_address": "13 West 38Th St. New York Ny 10018"
  },
  {
   "buildings": 2,
@@ -584,6 +560,18 @@
   ],
   "name": "Driggs Avenue Place Llc",
   "mgmt_address": "309 Rutledge St Brooklyn Ny 11211"
+ },
+ {
+  "buildings": 4,
+  "units": 53,
+  "addresses": [
+   "232 Metropolitan Avenue",
+   "60 North 8 Street",
+   "209 South 2 Street",
+   "300 Bedford Avenue"
+  ],
+  "name": "Los Sures Management",
+  "mgmt_address": "434 South 5Th St Brooklyn Ny 11211"
  },
  {
   "buildings": 6,
@@ -638,6 +626,16 @@
   "mgmt_address": "63 North 3Rd Street Brooklyn Ny 11249"
  },
  {
+  "buildings": 2,
+  "units": 48,
+  "addresses": [
+   "69 North 6 Street",
+   "224 Wythe Avenue"
+  ],
+  "name": "Plaza Management Usa",
+  "mgmt_address": "50 Rutledge Street Brooklyn Ny 11249"
+ },
+ {
   "buildings": 5,
   "units": 47,
   "addresses": [
@@ -649,30 +647,6 @@
   ],
   "name": "Apex Management Group",
   "mgmt_address": "401 Park Avenue South New York Ny 10016"
- },
- {
-  "buildings": 2,
-  "units": 47,
-  "addresses": [
-   "258 Grand Street",
-   "184 South 2 Street"
-  ],
-  "name": "Los Sures Management Co.",
-  "mgmt_address": "434 So. 5Th Street Brooklyn Ny 11211"
- },
- {
-  "buildings": 6,
-  "units": 47,
-  "addresses": [
-   "68 Richardson Street",
-   "182 Bedford Avenue",
-   "161 Roebling Street",
-   "458 Union Avenue",
-   "147 Grand Street",
-   "201 North 11 Street"
-  ],
-  "name": "Livingston Management Services",
-  "mgmt_address": "225 West 35Th Street New York Ny 10001"
  },
  {
   "buildings": 5,
@@ -744,13 +718,17 @@
   "mgmt_address": "1619 Third Ave Mgt Offcice New York Ny 10128"
  },
  {
-  "buildings": 1,
-  "units": 44,
+  "buildings": 5,
+  "units": 43,
   "addresses": [
-   "526 Union Avenue"
+   "68 Richardson Street",
+   "182 Bedford Avenue",
+   "161 Roebling Street",
+   "458 Union Avenue",
+   "147 Grand Street"
   ],
-  "name": "Akam Associates, Inc",
-  "mgmt_address": "99 Park Avenue New York Ny 10016"
+  "name": "Livingston Management Services",
+  "mgmt_address": "225 West 35Th Street New York Ny 10001"
  },
  {
   "buildings": 1,
@@ -827,8 +805,8 @@
   "addresses": [
    "227 Grand Street"
   ],
-  "name": "Yida Stern",
-  "mgmt_address": "261 Lenox Road Office Brooklyn Ny 11226"
+  "name": "Ds 227 Grand Llc",
+  "mgmt_address": "687 Driggs Avenue Brooklyn Ny 11211"
  },
  {
   "buildings": 1,
@@ -891,8 +869,8 @@
   "addresses": [
    "70 North 9 Street"
   ],
-  "name": "Wythe Avenue Properties Llc",
-  "mgmt_address": "203 Meserole Avenue Brooklyn Ny 11222"
+  "name": "Kaito Management Corp.",
+  "mgmt_address": "497 3Rd Street Brooklyn Ny 11215"
  },
  {
   "buildings": 1,
@@ -900,7 +878,7 @@
   "addresses": [
    "110 North 1 Street"
   ],
-  "name": "Division Property Management",
+  "name": "Division Property Management Ltd",
   "mgmt_address": "110 York Street Brooklyn Ny 11201"
  },
  {
@@ -929,8 +907,8 @@
    "115 South 2 Street",
    "725 Driggs Avenue"
   ],
-  "name": "Mordechai Landau",
-  "mgmt_address": "365 Flushing Brooklyn Ny 11205"
+  "name": "Martin Landau",
+  "mgmt_address": "199 Lee Avenue Brooklyn Ny 11211"
  },
  {
   "buildings": 3,
@@ -1361,6 +1339,18 @@
   "mgmt_address": "6807 5Th Ave Brooklyn Ny 11220"
  },
  {
+  "buildings": 4,
+  "units": 20,
+  "addresses": [
+   "215 North 6 Street",
+   "433 Metropolitan Avenue",
+   "719 Lorimer Street",
+   "161 South 1 Street"
+  ],
+  "name": "John Imperatore",
+  "mgmt_address": "97 Greenpoint Ave Brooklyn Ny 11222"
+ },
+ {
   "buildings": 1,
   "units": 20,
   "addresses": [
@@ -1485,8 +1475,8 @@
   "addresses": [
    "300 North 8 Street"
   ],
-  "name": "Miroslaw Wejckert",
-  "mgmt_address": "300 North 8Th Steet Brooklyn Ny 112112164"
+  "name": "300 N 8Th Llc",
+  "mgmt_address": "300 North 8Th St Brooklyn Ny 11211"
  },
  {
   "buildings": 1,
@@ -1555,6 +1545,17 @@
   "mgmt_address": "4203 13 Avenue Brooklyn Ny 11219"
  },
  {
+  "buildings": 3,
+  "units": 15,
+  "addresses": [
+   "37 Withers Street",
+   "39 Withers Street",
+   "555 Metropolitan Avenue"
+  ],
+  "name": "Matthew Malench",
+  "mgmt_address": "37 Withers St Brooklyn Ny 11211"
+ },
+ {
   "buildings": 2,
   "units": 15,
   "addresses": [
@@ -1604,23 +1605,12 @@
   "mgmt_address": "85-38 109 Street Richmond Hill Ny 11418"
  },
  {
-  "buildings": 3,
-  "units": 14,
-  "addresses": [
-   "433 Metropolitan Avenue",
-   "719 Lorimer Street",
-   "161 South 1 Street"
-  ],
-  "name": "John Imperatore",
-  "mgmt_address": "97 Greenpoint Ave Brooklyn Ny 11222"
- },
- {
   "buildings": 1,
   "units": 14,
   "addresses": [
    "600 Union Avenue"
   ],
-  "name": "Lucia Mancini",
+  "name": "Lucy Mancini",
   "mgmt_address": "600 Union Ave Brooklyn Ny 11211"
  },
  {
@@ -1658,15 +1648,6 @@
   ],
   "name": "100 Berry Realty Llc",
   "mgmt_address": "854 Humboldt Street Brooklyn Ny 11222"
- },
- {
-  "buildings": 1,
-  "units": 13,
-  "addresses": [
-   "438 Union Avenue"
-  ],
-  "name": "Guy Lamarche",
-  "mgmt_address": "836 Dekalb Avenue Brooklyn Ny 11221"
  },
  {
   "buildings": 1,
@@ -1753,6 +1734,16 @@
   ],
   "name": "Forest Equities Inc",
   "mgmt_address": "42 Washington Ave Brooklyn Ny 11205"
+ },
+ {
+  "buildings": 2,
+  "units": 11,
+  "addresses": [
+   "150 North 9 Street",
+   "201 North 11 Street"
+  ],
+  "name": "Livingston Management Services, Llc",
+  "mgmt_address": "225 West 35Th Street New York Ny 10001"
  },
  {
   "buildings": 2,
@@ -1856,7 +1847,7 @@
    "25 Skillman Avenue"
   ],
   "name": "25 Skillman Realty Llc",
-  "mgmt_address": "836 Dekalb Ave Brooklyn Ny 11221"
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211"
  },
  {
   "buildings": 1,
@@ -1949,7 +1940,7 @@
    "45 Havemeyer Street"
   ],
   "name": "Kam On Management Inc",
-  "mgmt_address": "777 Maguire Avenue Staten Island Ny 10309"
+  "mgmt_address": "777 Maguire Ave Staten Island Ny 10309"
  },
  {
   "buildings": 1,
@@ -1957,7 +1948,7 @@
   "addresses": [
    "149 Wythe Avenue"
   ],
-  "name": "Salvatore Girgonti",
+  "name": "Christina Girgenti",
   "mgmt_address": "8304 13Th Avenue Brooklyn Ny 11228"
  },
  {
@@ -1968,16 +1959,6 @@
   ],
   "name": "14 Bayard Street, Llc",
   "mgmt_address": "8004 6 Avenue Brooklyn Ny 11209"
- },
- {
-  "buildings": 2,
-  "units": 9,
-  "addresses": [
-   "37 Withers Street",
-   "555 Metropolitan Avenue"
-  ],
-  "name": "Joseph Malench",
-  "mgmt_address": "37 Withers Street Brooklyn Ny 11211"
  },
  {
   "buildings": 1,
@@ -1998,6 +1979,15 @@
   ],
   "name": "Napco",
   "mgmt_address": "561 Lorimer St Bklyn Ny 11211"
+ },
+ {
+  "buildings": 1,
+  "units": 9,
+  "addresses": [
+   "103 Grand Street"
+  ],
+  "name": "Crosstown Management Corp.",
+  "mgmt_address": "97-77 Queens Blvd Rego Park Ny 11374"
  },
  {
   "buildings": 1,
@@ -2062,7 +2052,7 @@
    "245 North 8 Street"
   ],
   "name": "North 8 Holdings Llc",
-  "mgmt_address": "836 Dekalb Avenue Brooklyn Ny 11221"
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211"
  },
  {
   "buildings": 1,
@@ -2071,7 +2061,7 @@
    "144 North 11 Street"
   ],
   "name": "North 11 Flats Llc",
-  "mgmt_address": "836 Dekalb Avenue Brooklyn Ny 11221"
+  "mgmt_address": "125 Broinquen Place Brooklyn Ny 11211"
  },
  {
   "buildings": 1,
@@ -2098,7 +2088,7 @@
    "96 Bedford Avenue"
   ],
   "name": "Bedford Flats Llc",
-  "mgmt_address": "836 Dekalb Avenue Brooklyn Ny 11221"
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211"
  },
  {
   "buildings": 1,
@@ -2212,6 +2202,15 @@
   "buildings": 1,
   "units": 8,
   "addresses": [
+   "148 North 9 Street"
+  ],
+  "name": "Jan Kaim",
+  "mgmt_address": "53 India St Brooklyn Ny 11222"
+ },
+ {
+  "buildings": 1,
+  "units": 8,
+  "addresses": [
    "144 North 9 Street"
   ],
   "name": "Paul Leontzwich Revocable Trust",
@@ -2260,7 +2259,7 @@
    "77 Berry Street"
   ],
   "name": "Berry Estates Llc",
-  "mgmt_address": "836 Dekalb Avenue Brooklyn Ny 11221"
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211"
  },
  {
   "buildings": 1,
@@ -2392,15 +2391,6 @@
   "buildings": 1,
   "units": 8,
   "addresses": [
-   "99 North 4 Street"
-  ],
-  "name": "99 North 4 Flats Llc",
-  "mgmt_address": "836 Dekalb Ave Brooklyn Ny 11221"
- },
- {
-  "buildings": 1,
-  "units": 8,
-  "addresses": [
    "43 Havemeyer Street"
   ],
   "name": "Taipovic Holdings Llc",
@@ -2503,7 +2493,7 @@
    "30 Withers Street"
   ],
   "name": "Anthony Masullo",
-  "mgmt_address": "227 Ainslie Brooklyn Ny 11211"
+  "mgmt_address": "412 Beach 142 St Rockaway Park Ny 11694"
  },
  {
   "buildings": 1,
@@ -2521,7 +2511,7 @@
    "217 South 1 Street"
   ],
   "name": "South First Enterprise Llc",
-  "mgmt_address": "836 Dekalb Ave Brooklyn Ny 11221"
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211"
  },
  {
   "buildings": 1,
@@ -2566,7 +2556,7 @@
    "29 Skillman Avenue"
   ],
   "name": "Jltalt Llc",
-  "mgmt_address": "87-15 162 Avenue Howard Beach Ny 11414"
+  "mgmt_address": "29 Skillman Avenue Brooklyn Ny 11211"
  },
  {
   "buildings": 1,
@@ -2657,7 +2647,7 @@
    "209 South 1 Street"
   ],
   "name": "South First Park Llc",
-  "mgmt_address": "836 Dekalb Ave Brooklyn Ny 11221"
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211"
  },
  {
   "buildings": 1,
@@ -2675,7 +2665,7 @@
    "540 Driggs Avenue"
   ],
   "name": "Driggs Flats Llc",
-  "mgmt_address": "836 Dekalb Avenue Brooklyn Ny 11221"
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211"
  },
  {
   "buildings": 1,
@@ -2693,7 +2683,7 @@
    "99 North 7 Street"
   ],
   "name": "North 7 Flats Llc",
-  "mgmt_address": "836 Dekalb Avenue Brooklyn Ny 11221"
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211"
  },
  {
   "buildings": 2,
@@ -2755,19 +2745,10 @@
   "buildings": 1,
   "units": 7,
   "addresses": [
-   "150 North 9 Street"
-  ],
-  "name": "Livingston Management Services, Llc",
-  "mgmt_address": "225 West 35Th Street New York Ny 10001"
- },
- {
-  "buildings": 1,
-  "units": 7,
-  "addresses": [
    "119 Berry Street"
   ],
   "name": "Berry Works Llc",
-  "mgmt_address": "119 Berry St Brooklyn Ny 11211"
+  "mgmt_address": "119 Berry Brooklyn Ny 11249"
  },
  {
   "buildings": 1,
@@ -2991,8 +2972,8 @@
   "addresses": [
    "180 North 8 Street"
   ],
-  "name": "Henryk Zdrodowski",
-  "mgmt_address": "84-54 Goldington Ct Middle Village Ny 11377"
+  "name": "Brian Zdrodowski",
+  "mgmt_address": "8454 Goldington Ct Middle Village Ny 11379"
  },
  {
   "buildings": 1,
@@ -3205,15 +3186,6 @@
   "buildings": 1,
   "units": 6,
   "addresses": [
-   "39 Withers Street"
-  ],
-  "name": "Matthew Malench",
-  "mgmt_address": "37 Withers Street Brooklyn Ny 11211"
- },
- {
-  "buildings": 1,
-  "units": 6,
-  "addresses": [
    "26 Richardson Street"
   ],
   "name": "Phillip Miller",
@@ -3243,7 +3215,7 @@
   "addresses": [
    "131 North 5Th Street"
   ],
-  "name": "Silvia Lucero",
+  "name": "131 North 5 Street Condominium",
   "mgmt_address": "1036 Lafayette Avenue Brooklyn Ny 11221"
  },
  {
@@ -3298,7 +3270,7 @@
   "addresses": [
    "127 Bedford Avenue"
   ],
-  "name": "Szymonibek Scibek",
+  "name": "Szymon Scibek",
   "mgmt_address": "127 Bedford Avenue Brooklyn Ny 11211"
  },
  {
@@ -3820,15 +3792,6 @@
   "buildings": 1,
   "units": 5,
   "addresses": [
-   "30 Richardson Street"
-  ],
-  "name": "Scuadra Properties Llc",
-  "mgmt_address": "836 Dekalb Ave Brooklyn Ny 11221"
- },
- {
-  "buildings": 1,
-  "units": 5,
-  "addresses": [
    "334 Grand Street"
   ],
   "name": "Jose Aquino",
@@ -3922,7 +3885,7 @@
    "207 South 1 Street"
   ],
   "name": "South 1 Holdings Llc",
-  "mgmt_address": "836 Dekalb Ave Brooklyn Ny 11221"
+  "mgmt_address": "125 Borinquen Place Brooklyn Ny 11211"
  },
  {
   "buildings": 1,
@@ -3939,8 +3902,8 @@
   "addresses": [
    "149 North 7 Street"
   ],
-  "name": "David Leiter",
-  "mgmt_address": "149 North 7Th Street Brooklyn Ny 11249"
+  "name": "Aptmgmt135, Llc",
+  "mgmt_address": "418 Broadway Albany Ny 11207"
  },
  {
   "buildings": 1,
@@ -3948,7 +3911,7 @@
   "addresses": [
    "99 Berry Street"
   ],
-  "name": "Agnieszka Piekarska",
+  "name": "Agnieszka Piekarski",
   "mgmt_address": "99 Berry Street Brooklyn Ny 11249"
  },
  {
@@ -3985,7 +3948,7 @@
    "118 North 9 Street"
   ],
   "name": "Kaiyue Yuan",
-  "mgmt_address": "242 Broome Street New York Ny 10002"
+  "mgmt_address": "70 Vestry Street New York Ny 10013"
  },
  {
   "buildings": 1,
@@ -4182,7 +4145,7 @@
   "addresses": [
    "581 Driggs Avenue"
   ],
-  "name": "Julio Bermudez",
+  "name": "Tyla Payano",
   "mgmt_address": "579 Driggs Brooklyn Ny 11211"
  },
  {
@@ -4201,7 +4164,7 @@
    "67 North 7 Street"
   ],
   "name": "Jerzy Plaza",
-  "mgmt_address": "67 North 7 Street Brooklyn Ny 11249"
+  "mgmt_address": "638 Leonard Street Brooklyn Ny 11222"
  },
  {
   "buildings": 1,
@@ -4254,8 +4217,8 @@
   "addresses": [
    "55 Withers Street"
   ],
-  "name": "Brian Lupo",
-  "mgmt_address": "55 Withers Street Brooklyn Ny 11211"
+  "name": "55 Withers Llc",
+  "mgmt_address": "6 E 45Th Street New York Ny 10017"
  },
  {
   "buildings": 1,
@@ -4319,6 +4282,15 @@
   ],
   "name": "Maria Baldini",
   "mgmt_address": "625 Lorimer Street Brooklyn Ny 11211"
+ },
+ {
+  "buildings": 1,
+  "units": 4,
+  "addresses": [
+   "744 Driggs Avenue"
+  ],
+  "name": "Alon Ashourzadeh",
+  "mgmt_address": "6 East 45Th Street New York Ny 10017"
  },
  {
   "buildings": 1,
@@ -4477,10 +4449,19 @@
   "buildings": 1,
   "units": 4,
   "addresses": [
+   "309 Bedford Avenue"
+  ],
+  "name": "Juan Santos",
+  "mgmt_address": "309 Bedford Ave Brooklyn Ny 11211"
+ },
+ {
+  "buildings": 1,
+  "units": 4,
+  "addresses": [
    "177 North 7Th Street"
   ],
   "name": "Sterling Equities Property Management",
-  "mgmt_address": "150 Greenwich Street New York Ny 10007"
+  "mgmt_address": "80 Meserole Street Brooklyn Ny 11206"
  },
  {
   "buildings": 1,
@@ -4614,7 +4595,7 @@
   "addresses": [
    "145 Bedford Avenue"
   ],
-  "name": "Jozef Jozef",
+  "name": "Jozef Regula",
   "mgmt_address": "8715 63Rd Drive Rego Park Ny 11374"
  },
  {
