@@ -130,6 +130,21 @@
   "mgmt_address": "120 Broadway New York Ny 10271"
  },
  {
+  "buildings": 7,
+  "units": 212,
+  "addresses": [
+   "72 Berry Street",
+   "218 North 8 Street",
+   "69 Berry Street",
+   "70 Berry Street",
+   "661 Driggs Avenue",
+   "30 Skillman Avenue",
+   "214 North 11 Street"
+  ],
+  "name": "Daisy Management",
+  "mgmt_address": "385 5Th Ave New York Ny 10016"
+ },
+ {
   "buildings": 3,
   "units": 211,
   "addresses": [
@@ -139,20 +154,6 @@
   ],
   "name": "620 Mgmt",
   "mgmt_address": "54 W 21St Street New York Ny 10010"
- },
- {
-  "buildings": 6,
-  "units": 205,
-  "addresses": [
-   "72 Berry Street",
-   "218 North 8 Street",
-   "69 Berry Street",
-   "70 Berry Street",
-   "661 Driggs Avenue",
-   "214 North 11 Street"
-  ],
-  "name": "Daisy Management",
-  "mgmt_address": "385 5Th Ave New York Ny 10016"
  },
  {
   "buildings": 2,
@@ -718,6 +719,18 @@
   "mgmt_address": "1619 Third Ave Mgt Offcice New York Ny 10128"
  },
  {
+  "buildings": 4,
+  "units": 43,
+  "addresses": [
+   "154 North 7 Street",
+   "162 Bedford Avenue",
+   "185 Bedford Avenue",
+   "164 Bedford Avenue"
+  ],
+  "name": "Jerry Lebedowicz",
+  "mgmt_address": "73 Meserole Avenue Brooklyn Ny 11222"
+ },
+ {
   "buildings": 5,
   "units": 43,
   "addresses": [
@@ -768,7 +781,7 @@
   "addresses": [
    "261 North 9 Street"
   ],
-  "name": "Equity Residential",
+  "name": "Vivmark Residential",
   "mgmt_address": "230 West 41St Street New York Ny 10036"
  },
  {
@@ -797,7 +810,7 @@
    "202 South 2 Street"
   ],
   "name": "Charney Property Management Llc",
-  "mgmt_address": "5-26 46Th Avenue Long Island Cty Ny 11101"
+  "mgmt_address": "2026-05-26T00:00:00.000 46Th Avenue Long Island Cty Ny 11101"
  },
  {
   "buildings": 1,
@@ -882,13 +895,23 @@
   "mgmt_address": "110 York Street Brooklyn Ny 11201"
  },
  {
+  "buildings": 2,
+  "units": 37,
+  "addresses": [
+   "644 Driggs Avenue",
+   "356 Metropolitan Avenue"
+  ],
+  "name": "Gregory Filipovich",
+  "mgmt_address": "122 Huron Street Brooklyn Ny 11222"
+ },
+ {
   "buildings": 1,
   "units": 37,
   "addresses": [
    "161 North 4 Street"
   ],
   "name": "Quantum Property Management",
-  "mgmt_address": "11-11 44Th Drive Long Island Cit Ny 11101"
+  "mgmt_address": "2026-11-11T00:00:00.000 44Th Drive Long Island Cit Ny 11101"
  },
  {
   "buildings": 2,
@@ -977,16 +1000,6 @@
   ],
   "name": "Aston Management Corp.",
   "mgmt_address": "33-01 Vernon Boulevard Long Island Cit Ny 11106"
- },
- {
-  "buildings": 2,
-  "units": 34,
-  "addresses": [
-   "154 North 7 Street",
-   "185 Bedford Avenue"
-  ],
-  "name": "Greg Lebedowicz",
-  "mgmt_address": "73 Meserole Avenue Brooklyn Ny 11222"
  },
  {
   "buildings": 1,
@@ -1281,15 +1294,6 @@
   "buildings": 1,
   "units": 21,
   "addresses": [
-   "644 Driggs Avenue"
-  ],
-  "name": "Gregory Filipovch",
-  "mgmt_address": "122 Huron Street Brooklyn Ny 11222"
- },
- {
-  "buildings": 1,
-  "units": 21,
-  "addresses": [
    "222 Metropolitan Avenue"
   ],
   "name": "222 Metropolitan Ave Llc",
@@ -1500,20 +1504,21 @@
   "buildings": 2,
   "units": 16,
   "addresses": [
+   "123 Bedford Avenue",
+   "121 Bedford Avenue"
+  ],
+  "name": "Marian Pekal",
+  "mgmt_address": "121 Bedford Avenue Brooklyn Ny 11211"
+ },
+ {
+  "buildings": 2,
+  "units": 16,
+  "addresses": [
    "71 Berry Street",
    "78 Berry Street"
   ],
   "name": "Fernando Feria",
   "mgmt_address": "80 Berry Street Brooklyn Ny 11249"
- },
- {
-  "buildings": 1,
-  "units": 16,
-  "addresses": [
-   "356 Metropolitan Avenue"
-  ],
-  "name": "Gregory Filipovich",
-  "mgmt_address": "122 Huron Street Brooklyn Ny 11222"
  },
  {
   "buildings": 1,
@@ -1650,6 +1655,16 @@
   "mgmt_address": "854 Humboldt Street Brooklyn Ny 11222"
  },
  {
+  "buildings": 2,
+  "units": 13,
+  "addresses": [
+   "106 North 8 Street",
+   "53 Kent Avenue"
+  ],
+  "name": "Marcourt Properties Llc",
+  "mgmt_address": "33 Nassau Avenue Brooklyn Ny 11222"
+ },
+ {
   "buildings": 1,
   "units": 13,
   "addresses": [
@@ -1763,17 +1778,6 @@
   ],
   "name": "Convent Hdfc",
   "mgmt_address": "64 Havemeyer Street Brooklyn Ny 11211"
- },
- {
-  "buildings": 3,
-  "units": 11,
-  "addresses": [
-   "165 South 2 Street",
-   "158 South 2 Street",
-   "153 South 2 Street"
-  ],
-  "name": "Moises Camacho",
-  "mgmt_address": "165 South 2Nd St Brooklyn Ny 11211"
  },
  {
   "buildings": 1,
@@ -2238,15 +2242,6 @@
   "buildings": 1,
   "units": 8,
   "addresses": [
-   "121 Bedford Avenue"
-  ],
-  "name": "Marian Pekal",
-  "mgmt_address": "121 Bedford Avenue Brooklyn Ny 11211"
- },
- {
-  "buildings": 1,
-  "units": 8,
-  "addresses": [
    "118 North 8 Street"
   ],
   "name": "Christian Lavery",
@@ -2368,15 +2363,6 @@
   ],
   "name": "106 1/2 North 8Th Llc",
   "mgmt_address": "61-54 82 Place Middle Village Ny 11379"
- },
- {
-  "buildings": 1,
-  "units": 8,
-  "addresses": [
-   "106 North 8 Street"
-  ],
-  "name": "Marcourt Properties Llc",
-  "mgmt_address": "33 Nassau Avenue Brooklyn Ny 11222"
  },
  {
   "buildings": 1,
@@ -2584,6 +2570,16 @@
   ],
   "name": "Marian Okuniewski",
   "mgmt_address": "16 Conselyea St Brooklyn Ny 11211"
+ },
+ {
+  "buildings": 2,
+  "units": 8,
+  "addresses": [
+   "744 Driggs Avenue",
+   "150 South 2 Street"
+  ],
+  "name": "Alon Ashourzadeh",
+  "mgmt_address": "6 East 45Th Street New York Ny 10017"
  },
  {
   "buildings": 1,
@@ -2859,6 +2855,16 @@
   "mgmt_address": "17 Conselyea Street Brooklyn Ny 11211"
  },
  {
+  "buildings": 2,
+  "units": 7,
+  "addresses": [
+   "158 South 2 Street",
+   "153 South 2 Street"
+  ],
+  "name": "Moises Camacho",
+  "mgmt_address": "165 South 2Nd St Brooklyn Ny 11211"
+ },
+ {
   "buildings": 1,
   "units": 7,
   "addresses": [
@@ -2875,15 +2881,6 @@
   ],
   "name": "Belvedere Management Llc",
   "mgmt_address": "610 Manhattan Ave. Brooklyn Ny 11222"
- },
- {
-  "buildings": 1,
-  "units": 7,
-  "addresses": [
-   "30 Skillman Avenue"
-  ],
-  "name": "30 Skillman Condo",
-  "mgmt_address": "30 Skillman Ave Brooklyn Ny 11211"
  },
  {
   "buildings": 1,
@@ -2954,8 +2951,8 @@
   "addresses": [
    "116 Bedford Avenue"
   ],
-  "name": "Dalan Management",
-  "mgmt_address": "134 West 25Th Street New York Ny 10001"
+  "name": "Dalan Real Estate Llc",
+  "mgmt_address": "134 West 25Th St New York Ny 10001"
  },
  {
   "buildings": 1,
@@ -2991,7 +2988,7 @@
    "179 North 8 Street"
   ],
   "name": "Caroline Krzoska",
-  "mgmt_address": "191 Mount Pleasant Ave Newark Nj 07104"
+  "mgmt_address": "191 Mount Pleasant Ave Newark Nj 7104"
  },
  {
   "buildings": 1,
@@ -3078,10 +3075,19 @@
   "buildings": 1,
   "units": 6,
   "addresses": [
+   "226 North 5 Street"
+  ],
+  "name": "Ralph Astore",
+  "mgmt_address": "6069 70Th St Maspeth Ny 11378"
+ },
+ {
+  "buildings": 1,
+  "units": 6,
+  "addresses": [
    "76 Berry Street"
   ],
   "name": "Alicja Walega",
-  "mgmt_address": "76 Berry St Brooklyn Ny 11249"
+  "mgmt_address": "76 Berry Street Brooklyn Ny 11249"
  },
  {
   "buildings": 1,
@@ -3325,7 +3331,7 @@
    "706 Lorimer Street"
   ],
   "name": "Richlor Apartments, Llc",
-  "mgmt_address": "305 809 22Nd Street Union City Nj 07087"
+  "mgmt_address": "305 809 22Nd Street Union City Nj 7087"
  },
  {
   "buildings": 1,
@@ -3624,7 +3630,7 @@
    "197 North 6 Street"
   ],
   "name": "Bidg Llc",
-  "mgmt_address": "238 North 11Th Street Brooklyn Ny 11211"
+  "mgmt_address": "238 North 11 Street Brooklyn Ny 11211"
  },
  {
   "buildings": 1,
@@ -3722,8 +3728,8 @@
   "addresses": [
    "143 North 11 Street"
   ],
-  "name": "Robert Bergmann",
-  "mgmt_address": "143 North 11Th St Brooklyn Ny 11249"
+  "name": "Johnny Bergmann",
+  "mgmt_address": "143 North 11Th Street Brooklyn Ny 11249"
  },
  {
   "buildings": 1,
@@ -3741,7 +3747,7 @@
    "163 Roebling Street"
   ],
   "name": "163 Roebling Llc",
-  "mgmt_address": "152 E Putnam Ave Cos Cob Ct 06807"
+  "mgmt_address": "152 E Putnam Ave Cos Cob Ct 6807"
  },
  {
   "buildings": 1,
@@ -3796,15 +3802,6 @@
   ],
   "name": "Jose Aquino",
   "mgmt_address": "30-30 75 Street East Elmhurst Ny 11370"
- },
- {
-  "buildings": 1,
-  "units": 5,
-  "addresses": [
-   "53 Kent Avenue"
-  ],
-  "name": "Marcourt Properties",
-  "mgmt_address": "33 Nassau Avenue Brooklyn Ny 11222"
  },
  {
   "buildings": 1,
@@ -4028,8 +4025,8 @@
   "addresses": [
    "484 Rodney Street"
   ],
-  "name": "Agatha Larocca",
-  "mgmt_address": "15 Cottontail Ct Staten Island Ny 10312"
+  "name": "Anas Family Nostra Corporation",
+  "mgmt_address": "486 Rodney Street Bklyn Ny 11211"
  },
  {
   "buildings": 1,
@@ -4287,15 +4284,6 @@
   "buildings": 1,
   "units": 4,
   "addresses": [
-   "744 Driggs Avenue"
-  ],
-  "name": "Alon Ashourzadeh",
-  "mgmt_address": "6 East 45Th Street New York Ny 10017"
- },
- {
-  "buildings": 1,
-  "units": 4,
-  "addresses": [
    "123 South 2 Street"
   ],
   "name": "Bruce Ellison",
@@ -4390,15 +4378,6 @@
   ],
   "name": "Richard Berman",
   "mgmt_address": "189-10 Union Turnpike Flushing Ny 11366"
- },
- {
-  "buildings": 1,
-  "units": 4,
-  "addresses": [
-   "150 South 2 Street"
-  ],
-  "name": "Vastola-Oliva Properties Inc",
-  "mgmt_address": "150 South 2Nd Street Brooklyn Ny 11211"
  },
  {
   "buildings": 1,
@@ -4722,7 +4701,7 @@
    "151 Bedford Avenue"
   ],
   "name": "B151",
-  "mgmt_address": "2418 5Th Street Fort Lee Nj 07024"
+  "mgmt_address": "2418 5Th Street Fort Lee Nj 7024"
  },
  {
   "buildings": 1,
@@ -4776,7 +4755,7 @@
    "117 Berry Street"
   ],
   "name": "Zhang Wang",
-  "mgmt_address": "117 Berry Street Brooklyn Ny 11249"
+  "mgmt_address": "177 Berry Street Brooklyn Ny 11249"
  },
  {
   "buildings": 1,
@@ -4793,8 +4772,8 @@
   "addresses": [
    "93 Berry Street"
   ],
-  "name": "Henryk Nastaj",
-  "mgmt_address": "93 Berry Str Brooklyn Ny 11211"
+  "name": "Kinga Nastaj",
+  "mgmt_address": "93 Berry St Brooklyn Ny 11249"
  },
  {
   "buildings": 1,
